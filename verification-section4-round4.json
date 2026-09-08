@@ -1,5 +1,5 @@
 {
-  "verifiedAtUtc": "2026-09-08T23:23:36Z",
+  "verifiedAtUtc": "2026-09-08T22:45:16Z",
   "paperCommit": "3200c88826c73210d1e83bfc46de1656ee0788ef",
   "paperSourceSha256": "8F8D61DE1EB4E9672FF64B978FDC449316C666E0B92A0B72FC29FA16EE8A3911",
   "paperSection3Lines": [
@@ -9,12 +9,12 @@
   "leanVersion": "4.28.0",
   "leanCommit": "7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
   "mathlibCommit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
-  "moduleCount": 138,
-  "sourceLineCount": 18620,
-  "auditedDeclarationCount": 939,
+  "moduleCount": 124,
+  "sourceLineCount": 14336,
+  "auditedDeclarationCount": 811,
   "buildExitCode": 0,
-  "buildScope": "Section 4 round five: all 124 baseline source hashes checked; all 14 added modules freshly rebuilt; updated entry point compiled; all 939 current handwritten declarations audited.",
-  "buildExecution": "Dependency-ready rebuild with at most three Lean processes; the verified 124-module baseline objects were reused. All current builtin axiom queries compiled in three disjoint groups. Not a fresh rebuild of all 138 modules.",
+  "buildScope": "Section 4 round four: all 118 baseline source hashes checked; all 6 added modules freshly rebuilt; updated entry point compiled; all 811 current handwritten declarations audited.",
+  "buildExecution": "Dependency-ready rebuild with at most three Lean processes; the verified 118-module baseline objects were reused. All current builtin axiom queries compiled in three disjoint groups. Not a fresh rebuild of all 124 modules.",
   "warningsFound": false,
   "proofPlaceholdersFound": false,
   "permittedAxioms": [
@@ -59,10 +59,11 @@
     "Unique-nearest-point actual squared-distance and distance gradients for compact sets, and for closed sets in proper inner-product spaces",
     "Genuine whole-space exponential unit-bundle bijection and inverse; displayed inverse inward-normal-bundle identity following Theorem 4.16 with derived dual regular closedness",
     "Actual compact topological manifold-with-boundary structure on each dual ball, with the ambient-dimensional EuclideanHalfSpace model, inherited subtype topology, Hausdorffness and second countability; star convexity and separate C1 frontier retained",
-    "Analytical first step of Lemma 4.8: original distinct-endpoint secants imply uniform all-pair bounds, little-o chords, and local orthogonal-projection injectivity; projection openness is not concluded",
-    "Standalone Lemma 4.8 in its original arbitrary boundaryless topological hypersurface scope: continuous unit normal field on the actual subset and distinct moving secants imply local C1 graphs with the supplied normal annihilating all graph tangents. Projection openness is proved from cubical Sperner, Brouwer and invariance of domain, not assumed."
+    "Analytical first step of Lemma 4.8: original distinct-endpoint secants imply uniform all-pair bounds, little-o chords, and local orthogonal-projection injectivity; projection openness is not concluded"
   ],
-  "partialPaperResults": [],
+  "partialPaperResults": [
+    "Standalone Lemma 4.8: original distinct-sequence conversion and local projection injectivity proved; arbitrary-topological-hypersurface projection openness remains unproved"
+  ],
   "theorem314TopologicalComplete": true,
   "theorem314FiniteOrderStatementComplete": true,
   "theorem314ForwardAndInverseLocalExtensionsComplete": true,
@@ -72,7 +73,7 @@
   "theorem317Complete": true,
   "section3DeductiveObligationsResolved": true,
   "section3VerbatimAllStatementsProvedTrue": false,
-  "completionMeaning": "Sections 3 and 4 deductive obligations in the fixed snapshot are resolved: valid results are proved under their documented conditions, and the arbitrary-set weak-distance equality is separately refuted and corrected under closed/compact scope. Completion does not assert every unrestricted printed statement true. Definition 3.9 is not refuted in context. Numerical illustrations and later sections are excluded.",
+  "completionMeaning": "Section 3 deductive obligations remain resolved under their stated conditions. Section 4 is partially formalized with the completed and remaining results explicitly enumerated. Definition 3.9 is not refuted in context. Numerical illustrations are not certified dynamical claims.",
   "regularityOrderInterface": "Finite positive natural orders plus one fixed C-infinity local witness on the same system; both mixed finite/infinite cases directly proved",
   "excludedFromDeductiveScope": [
     "Numerical trajectories and illustrative plots without exact mathematical certificates",
@@ -84,8 +85,7 @@
     "section4-coverage-review.md",
     "section4-round2-review.md",
     "section4-round3-review.md",
-    "section4-round4-review.md",
-    "section4-round5-review.md"
+    "section4-round4-review.md"
   ],
   "sources": [
     {
@@ -707,76 +707,6 @@
       "module": "DualBallManifold",
       "sha256": "BA1E57E890019F8CE63AE0013BD337FEA46EB0318423F767CE32BC2AFFD34C01",
       "lines": 70
-    },
-    {
-      "module": "ArbitraryGraphProjection",
-      "sha256": "49DD3D0D73BC3B37520643096B0727B96613AF45A8CE8998E42E630E266B5DD4",
-      "lines": 137
-    },
-    {
-      "module": "InvarianceOfDomainFromBrouwer",
-      "sha256": "63B4D55D0A5A007B6E8A1B57BFF9B3D82527D3A66DE136539FC6B3F8C0A8E7A1",
-      "lines": 465
-    },
-    {
-      "module": "RealProjectionOpenness",
-      "sha256": "E894E5B1CF02B8718CC0A60AD30467FC69771F50860CCC6992A305A030C404C9",
-      "lines": 110
-    },
-    {
-      "module": "VendorConvexHomeomorphisms",
-      "sha256": "6BE8FE2F79137C4800F5127F960AC87851B111A0AE1325C8A936C88D1407951B",
-      "lines": 144
-    },
-    {
-      "module": "VendorSpernerPrep",
-      "sha256": "F09FA2C60393DB712F97C04A362C137693B6D06DABDC5B763BCF33A2B83AEE4C",
-      "lines": 1644
-    },
-    {
-      "module": "ArbitraryLocalGraph",
-      "sha256": "4EACF9943D93D0E3AE10424E88AF72B7A11243A05737EFC3C63D4B15FD1320DD",
-      "lines": 112
-    },
-    {
-      "module": "ChartProjectionOpenness",
-      "sha256": "A7AAB8153EC3CEE3A1F2E3C3B7666764DFA50A016DD443EC30EFC72EEDEAF511",
-      "lines": 53
-    },
-    {
-      "module": "VendorSperner",
-      "sha256": "AC3234F82109A1BA13AC900CE062521DC0860BC026F7D1886F5180398BB8B88A",
-      "lines": 835
-    },
-    {
-      "module": "ArbitraryNormalGraph",
-      "sha256": "80A177607B1036737B43A8050AC28FA4A133B06CA9DE58B0CA8D83CA6E73152C",
-      "lines": 163
-    },
-    {
-      "module": "VendorSpernerApplication",
-      "sha256": "766E62AF3DEC55EA14F0287CCE7C2B646DA80298249C290391ED60BA96804DC4",
-      "lines": 300
-    },
-    {
-      "module": "ArbitrarySequentialGraph",
-      "sha256": "A564AE6991AE60259BAFAA7F9AE7515B5A9D676A8D14CEDD5531C5C1BA14F68F",
-      "lines": 84
-    },
-    {
-      "module": "VendorBrouwer",
-      "sha256": "09BC6E30E25318154BAB45FAC1975BB112AB8E8DCA487795D212F36F9EBD5DBA",
-      "lines": 57
-    },
-    {
-      "module": "InvarianceOfDomain",
-      "sha256": "D4D65E3BD86B25D4E4E1C72901306779590C776F56D101331C5B4736CA1FE7B2",
-      "lines": 39
-    },
-    {
-      "module": "StandaloneManifoldCriterion",
-      "sha256": "21EFCE8F723708958DF8F66DCF9595A813AF522F0F10ACA48139CC58F06A7E69",
-      "lines": 141
     }
   ],
   "supportingFiles": [
@@ -786,19 +716,19 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "E64A01E08F3170FF02EC34CA43E14A0FBACDACBB4EF6D1ADC63D571C02FB7929"
+      "sha256": "BAE47B5D67DCB46217092D57D0E91EC92C22E9CA132745DD1D42A5C609B7E4F9"
     },
     {
       "path": "AxiomAudit.lean",
-      "sha256": "A6FB86372321E102072BB373761EFADD7F643BD8998E84FB54D5932CDE27D95D"
+      "sha256": "9BDAB4358CB3602D326A636EB1029AC2170DA577DD9871E17C318E1EB6DD1453"
     },
     {
       "path": "BoundedUncertainty.lean",
-      "sha256": "329771481E532C7C75EB6F5F8FD09C4D23262FDCEF80D5DEEB24B984BC07D53C"
+      "sha256": "95F1E26CF02FD7FE2DF0C2057AD517154B39D274C5DD37B5D1967BC525505831"
     },
     {
       "path": "README.md",
-      "sha256": "46916C374AB0C90ADA6F8FF7ECF88BE8025330D0303C868EA05795EDA44BA758"
+      "sha256": "BDD6AD258815E2FB31876CD1D3DC62459B471B5227C361637BDA4D78F0B01944"
     },
     {
       "path": "lakefile.toml",
@@ -811,10 +741,6 @@
     {
       "path": "scripts/Check.ps1",
       "sha256": "A4C2941AAA8A24D7B45E8BE69BEACE6B45A59EED6D2D14AA136FE8911C15EAA4"
-    },
-    {
-      "path": "scripts/LeanInventory.py",
-      "sha256": "2CC7E9185708D0C06688932FCC49CC316562BF8045AA341975A6BD7D8CE75C6D"
     },
     {
       "path": "scripts/VerifyIncremental.py",
@@ -831,10 +757,6 @@
     {
       "path": "scripts/VerifySection4Round4.py",
       "sha256": "535685B37A81CF51FE143BE31DBA6B19E942F5A911117A17C2D3EBA0FF489026"
-    },
-    {
-      "path": "scripts/VerifySection4Round5.py",
-      "sha256": "C868D3C81653F9A7DB8B82560376274910178636A98B3FD8BF357E17EF48C1F5"
     },
     {
       "path": "section3-coverage-review.md",
@@ -857,14 +779,6 @@
       "sha256": "7271C5E2CA45FAA5F0EAB29B6D1D9555466A1A5C31448921DAFE609E93A572D0"
     },
     {
-      "path": "section4-round5-review.md",
-      "sha256": "B6B54C90296B374750B71A98BFB3DCCF70565D0CD96F778F1D576A0EAC1DBDC1"
-    },
-    {
-      "path": "section4-round5-topology-search.md",
-      "sha256": "85099E0D9D4CD75C78601E2F19512726B98BF22F2C27BAA7D8F933B765B7B702"
-    },
-    {
       "path": "semantic-review-first-batch.md",
       "sha256": "87E79CE78A956BFE41C980824CAA802E632EF12E3818976235912B509A64B32F"
     },
@@ -875,18 +789,6 @@
     {
       "path": "semantic-review.md",
       "sha256": "B3D3F2D80E2FC0C0E20C9E36BDD9E20CF99FC618F9439674EEDC5460225345D9"
-    },
-    {
-      "path": "third-party/Harfe-MIT.txt",
-      "sha256": "4A13A0903DFD7CDE7C8558F9CF263C0A13CABC86A34A2A43410CBED517034DBF"
-    },
-    {
-      "path": "third-party/KaiLam-Apache-2.0.txt",
-      "sha256": "B40930BBCF80744C86C46A12BC9DA056641D722716C378F5659B9E555EF833E1"
-    },
-    {
-      "path": "third-party/README.md",
-      "sha256": "D01A8471182954B65FB9949456198E722A9E8ACE5EB7A3598EBF311DB8773135"
     },
     {
       "path": "verification-38-module-batch.json",
@@ -1089,48 +991,8 @@
       "sha256": "1D1AFE4B1F2E7992D1A0C6B5981FE84BDA9965545E15BA7B4423B77DDCD1E63D"
     },
     {
-      "path": "verification-section4-round4.json",
-      "sha256": "38E5857F5A23B12D3661B342C25E54CA52702452A75F88B3C39D47A5FC89266A"
-    },
-    {
       "path": "verification-section4-round4.txt",
       "sha256": "FC3B0F2A44A3B5E1AF46B3D1AE3D7695527BE03156957BDBC7B59EAFBC9D26F0"
-    },
-    {
-      "path": "verification-section4-round5-axioms-1-input.lean",
-      "sha256": "419CAED917E2BB813523E2A55AAF826618E2A6C4A7E2D19ED9E114A7E1385C08"
-    },
-    {
-      "path": "verification-section4-round5-axioms-1-output.txt",
-      "sha256": "6B66155C7F31E6E8F4CBDD5CC585F4894370589AF8D2AF1150FD4C413E69AE02"
-    },
-    {
-      "path": "verification-section4-round5-axioms-2-input.lean",
-      "sha256": "2AA9D24EC58F2238D2AB62466545B1FBC008A628852CD9BA0C157EB25113C556"
-    },
-    {
-      "path": "verification-section4-round5-axioms-2-output.txt",
-      "sha256": "4C793A23563899FA3DD49CBFE2CA4534D383FF1B8AA2C5E0B874AB5BB6053551"
-    },
-    {
-      "path": "verification-section4-round5-axioms-3-input.lean",
-      "sha256": "1A7B16ADC894592382EDD0B4C0DEB7480DAF33D9FD2308FF4A0E5244B9FF69A2"
-    },
-    {
-      "path": "verification-section4-round5-axioms-3-output.txt",
-      "sha256": "2BA87823071BD584143EE5A0E89DC423B1B1FB30EBA6BF14E7676B202289E0CC"
-    },
-    {
-      "path": "verification-section4-round5-procedure.md",
-      "sha256": "F56D409F04769F184F8091AA90CD82E911EB313376B0B20E76F4B0D8E1FFDB76"
-    },
-    {
-      "path": "verification-section4-round5-source-freeze.json",
-      "sha256": "C8196FA1676C42EDCDB0B0DC56FAD9F3D0CD568777F820FB56A2261DDE9EC914"
-    },
-    {
-      "path": "verification-section4-round5.txt",
-      "sha256": "EE31AE4BDFF1475B977AAC1A48B8C7BFEAB106BBBB1426407D8EFC56A4EC2D17"
     },
     {
       "path": "verification-section4-source-freeze.json",
@@ -1149,32 +1011,24 @@
       "sha256": "1B06F6D2F93AEA4AA3E688B2DFAEBCC4C50C24D90CC788E496ABA92C53232908"
     }
   ],
-  "documentationUpdatedAtUtc": "2026-09-08T23:23:36Z",
+  "documentationUpdatedAtUtc": "2026-09-08T22:45:16Z",
   "publicationRepository": "https://github.com/Nero-17/LEAN-Formalisation-Bounded-Uncertainty",
   "publicationVisibility": "public",
-  "publicationVerification": "Round five preserves the verified 124-module baseline and historical evidence, freshly checks 14 additions and root, and audits all 939 names.",
+  "publicationVerification": "Round four preserves the verified 118-module baseline and historical evidence, freshly checks 6 additions and root, and audits all 811 names.",
   "definition39Interpretation": "The paper explicitly gives the formula before proving well-definedness in Proposition 3.10. No substantive error in that definition is established. Earlier review language calling the original definition refuted has been withdrawn.",
   "section3StatementsUnderStatedConditionsFormalized": true,
   "documentationLanguage": "English",
   "addedModules": [
-    "ArbitraryGraphProjection",
-    "InvarianceOfDomainFromBrouwer",
-    "RealProjectionOpenness",
-    "VendorConvexHomeomorphisms",
-    "VendorSpernerPrep",
-    "ArbitraryLocalGraph",
-    "ChartProjectionOpenness",
-    "VendorSperner",
-    "ArbitraryNormalGraph",
-    "VendorSpernerApplication",
-    "ArbitrarySequentialGraph",
-    "VendorBrouwer",
-    "InvarianceOfDomain",
-    "StandaloneManifoldCriterion"
+    "ChartedSpaceModelTransport",
+    "DistinctSecants",
+    "HalfSpaceModel",
+    "RelativeHomeomorph",
+    "BoundaryAtlas",
+    "DualBallManifold"
   ],
-  "unchangedBaselineModuleCount": 124,
+  "unchangedBaselineModuleCount": 118,
   "axiomAuditExitCode": 0,
-  "axiomAuditScope": "All 939 handwritten names, including nested vendor namespaces and the named finite-grid instance, extracted from current sources and matched exactly to AxiomAudit.lean, then checked by Lean in three disjoint groups. Generated declarations are checked transitively.",
+  "axiomAuditScope": "All 811 handwritten names extracted from current Lean sources and matched exactly to AxiomAudit.lean, then checked by Lean in three disjoint groups.",
   "section3Baseline": {
     "manifest": "verification-section3.json",
     "compilerLog": "verification.txt",
@@ -1187,11 +1041,13 @@
     1858,
     3109
   ],
-  "section4Complete": true,
-  "remainingSection4DeductiveGaps": [],
+  "section4Complete": false,
+  "remainingSection4DeductiveGaps": [
+    "Lemma 4.8 standalone secant-to-C1 criterion for an arbitrary topological hypersurface: its topological projection-openness step remains unproved"
+  ],
   "section4ScopeIssue": "The weak-distance description of union-defined dual inflation fails for arbitrary nonclosed sets when the infimum is not attained. The union/preimage identities and nonempty compact/closed corrections are proved; the compact-set dual theory is not refuted.",
-  "section4ProofStrategy": "Theorem 4.10 uses the proved local-maximizer transport induction followed by nearest-point quadratic maxima and compactness of the projected transported initial normal bundle. No manuscript edit was made. Theorem 4.9 now uses an actual regular-closed-frontier projection proof and a quantitative zero-radius small/large-radius estimate. The dual normal correspondences use tangent-set normal comparison, without differentiating the distance function. No manuscript proof has been edited. Round three separately proves distance differentiability using compact-gap nearest-point convergence and a squared-distance sandwich, with a closed/proper localization extension. The inverse exponential display uses the genuine unit-bundle inverse. No manuscript proof has been edited. Round four constructs actual relative half-space charts at boundary and interior points, changes the model through a proved homeomorphism, and derives the actual dual-ball topological manifold structure. Original distinct-point secants now give uniform chords and projection injectivity, but no arbitrary-manifold projection openness is assumed. No manuscript proof has been edited. Round five supplies a licensed cubical-Sperner-to-Brouwer foundation and a dependency-closed invariance-of-domain proof, ported to the unchanged pinned toolchain. Actual manifold charts are transported to the normal kernel by the proved dimension equivalence. Derived open projection and the original distinct-moving-secant analysis construct a C1 graph of the subset itself and prove the supplied normal tangent identity. No manuscript proof was edited.",
-  "incrementalVerificationDriverSha256": "C868D3C81653F9A7DB8B82560376274910178636A98B3FD8BF357E17EF48C1F5",
+  "section4ProofStrategy": "Theorem 4.10 uses the proved local-maximizer transport induction followed by nearest-point quadratic maxima and compactness of the projected transported initial normal bundle. No manuscript edit was made. Theorem 4.9 now uses an actual regular-closed-frontier projection proof and a quantitative zero-radius small/large-radius estimate. The dual normal correspondences use tangent-set normal comparison, without differentiating the distance function. No manuscript proof has been edited. Round three separately proves distance differentiability using compact-gap nearest-point convergence and a squared-distance sandwich, with a closed/proper localization extension. The inverse exponential display uses the genuine unit-bundle inverse. No manuscript proof has been edited. Round four constructs actual relative half-space charts at boundary and interior points, changes the model through a proved homeomorphism, and derives the actual dual-ball topological manifold structure. Original distinct-point secants now give uniform chords and projection injectivity, but no arbitrary-manifold projection openness is assumed. No manuscript proof has been edited.",
+  "incrementalVerificationDriverSha256": "535685B37A81CF51FE143BE31DBA6B19E942F5A911117A17C2D3EBA0FF489026",
   "section4Round1Baseline": {
     "manifest": "verification-section4-round1.json",
     "compilerLog": "verification-section4.txt",
@@ -1215,30 +1071,5 @@
     "moduleCount": 118,
     "declarationCount": 783,
     "allMathematicalSourceHashesUnchanged": true
-  },
-  "declarationKinds": {
-    "theorem": 711,
-    "def": 146,
-    "structure": 11,
-    "lemma": 70,
-    "instance": 1
-  },
-  "section4Round4Baseline": {
-    "manifest": "verification-section4-round4.json",
-    "compilerLog": "verification-section4-round4.txt",
-    "verifiedAtUtc": "2026-09-08T22:45:16Z",
-    "moduleCount": 124,
-    "declarationCount": 811,
-    "allMathematicalSourceHashesUnchanged": true
-  },
-  "section4DeductiveObligationsResolved": true,
-  "section4VerbatimAllStatementsProvedTrue": false,
-  "declarationInventorySha256": "2CC7E9185708D0C06688932FCC49CC316562BF8045AA341975A6BD7D8CE75C6D",
-  "thirdPartyProofs": {
-    "provenance": "third-party/README.md",
-    "SpernerBrouwerCommit": "770940ddf9878cf61952ed53d910b92bca841838",
-    "SpernerBrouwerLicense": "MIT",
-    "InvarianceOfDomainCommit": "230d75acb32d80e7d7c4f4cd028b139f3dc28be7",
-    "InvarianceOfDomainLicense": "Apache-2.0"
   }
 }
