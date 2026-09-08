@@ -116,3 +116,9 @@ import BoundedUncertainty.NearestPointContinuity
 import BoundedUncertainty.PointStartIteration
 import BoundedUncertainty.DistanceDifferentiability
 import BoundedUncertainty.ClosedDistanceDifferentiability
+import BoundedUncertainty.ChartedSpaceModelTransport
+import BoundedUncertainty.DistinctSecants
+import BoundedUncertainty.HalfSpaceModel
+import BoundedUncertainty.RelativeHomeomorph
+import BoundedUncertainty.BoundaryAtlas
+import BoundedUncertainty.DualBallManifold

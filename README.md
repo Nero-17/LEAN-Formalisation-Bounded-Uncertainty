@@ -1,6 +1,6 @@
 # LEAN Formalisation of Bounded Uncertainty
 
-Lean 4 formalisation of Section 3 and selected results of Section 4 of *Dynamics with state-dependent uncertainty: a boundary map approach*. The current project contains 118 mathematical modules and 783 named declarations. Lean 4.28.0 and an exact mathlib revision are pinned below. Section 3 is complete within the stated deductive scope; Section 4 is in progress.
+Lean 4 formalisation of Section 3 and selected results of Section 4 of *Dynamics with state-dependent uncertainty: a boundary map approach*. The current project contains 124 mathematical modules and 811 named declarations. Lean 4.28.0 and an exact mathlib revision are pinned below. Section 3 is complete within the stated deductive scope; Section 4 is in progress.
 
 The project covers the deductive content of Section 3 in the fixed paper snapshot: definitions and interfaces, all lemmas, propositions and theorems, analytical examples, and counterexamples discussed in the remarks. Definition 3.9 introduces a formula, and Proposition 3.10 then proves its well-definedness under contraction; the formalisation represents these together. The additional `DefinitionScope` example shows that an unconditional extension of the construction can fail. It does not refute the definition or proposition in their stated context. Numerical figures are not treated as proved dynamical conclusions.
 
@@ -25,7 +25,7 @@ The paper snapshot is commit `3200c88826c73210d1e83bfc46de1656ee0788ef`; Section
 
 ## Section 4 progress
 
-The third Section 4 batch adds 6 modules and 39 declarations, preserving all 112 previously verified mathematical source files. The current claim ledger and independent review are in [section4-round3-review.md](section4-round3-review.md). The earlier [round-two review](section4-round2-review.md) and [first-batch review](section4-coverage-review.md) preserve their historical assessments.
+The fourth Section 4 batch adds 6 modules and 28 declarations, preserving all 118 previously verified mathematical source files. The current claim ledger and independent review are in [section4-round4-review.md](section4-round4-review.md). Earlier [round-three](section4-round3-review.md), [round-two](section4-round2-review.md) and [first-batch](section4-coverage-review.md) reviews preserve their historical assessments.
 
 | Paper content | Formalised result | Main modules |
 |---|---|---|
@@ -46,8 +46,15 @@ The third Section 4 batch adds 6 modules and 39 declarations, preserving all 112
 | Unique-nearest-point distance differential | Actual distance and squared-distance gradients; uniqueness only at the marked point; compact scope and closed/proper extension, without convexity | NearestPointContinuity, DistanceDifferentiability, ClosedDistanceDifferentiability |
 | Inverse exponential display after 4.16 | Proved unit-bundle bijection, genuine inverse, and inverse inward-normal-bundle equality with dual regular closedness derived | DualExponentialInverse |
 
+| Dual-ball manifold with boundary | Actual half-space charts on the existing dual-ball subtype topology, covering interior and boundary points; standard ambient-dimensional EuclideanHalfSpace model; compactness, Hausdorffness, second countability, topological manifold structure and separate C1 frontier | RelativeHomeomorph, BoundaryAtlas, HalfSpaceModel, ChartedSpaceModelTransport, DualBallManifold |
+| Lemma 4.8, analytical first step | Original distinct-endpoint sequence condition gives uniform all-pair bounds, little-o chords and local orthogonal-projection injectivity; no projection openness is claimed | DistinctSecants |
 
-**Still open:** standalone Lemma 4.8 for an arbitrary topological hypersurface, and a mathlib manifold-with-boundary structure for dual balls beyond the proved one-sided C1 graphs. Numerical trajectories are not certified. Section 4 is not claimed complete.
+
+**Still open:** standalone Lemma 4.8 for an arbitrary topological hypersurface, specifically its topological projection-openness step. The dual-ball manifold-with-boundary structure is now proved. Numerical trajectories are not certified. Section 4 is not claimed complete.
+
+The dual-ball atlas retains the actual subspace topology. Boundary charts flatten a genuine one-sided graph and use its continuous extension only on a neighbourhood of agreement; interior charts shift the first coordinate into the positive half-space. Actual relative open partial homeomorphisms and their inverse laws supply chart coverage. A proved model homeomorphism gives the standard d-dimensional EuclideanHalfSpace. The manifold statement is topological (IsManifold at order zero), with the separately proved C1 frontier; differentiable atlas transitions are not asserted.
+
+For standalone 4.8, distinct bad pairs at radii tending to zero prove the uniform chord estimate; a one-half estimate forces equal projected points to coincide. The remaining openness is genuinely topological: for an arbitrary manifold subset of a fixed hyperplane the normal secants already vanish identically, so the analytical hypothesis alone does not supply the needed local openness. No stronger ambient-flatness hypothesis has been substituted.
 
 The separately stated distance derivative is now proved: compactness and uniqueness at the base point force every nearby minimizer to approach that point; a two-sided squared-distance remainder estimate yields the derivative, and a square-root argument yields the distance gradient. A proved local compact truncation extends this to closed sets in proper spaces. The alternative normal-contact proof of 4.16 is retained. The point-start result asserts inclusion for later iterates, not equality without further visibility assumptions.
 
@@ -98,6 +105,6 @@ That script recompiles every module in entry-point dependency order, compiles th
 
 The preserved Section 3 full rebuild consisted of 16 modules completed serially and 53 compiled in parallel once their dependencies were ready, followed by 510 axiom queries in three groups. [verification-build-procedure.md](verification-build-procedure.md), [verification.txt](verification.txt), and [verification-section3.json](verification-section3.json) preserve that baseline evidence.
 
-The current Section 4 round uses incremental verification: hash-check all 112 unchanged baseline sources, freshly rebuild all 6 additions in dependency order, compile the updated root, and run all 783 current axiom queries in three disjoint groups. [scripts/VerifySection4Round3.py](scripts/VerifySection4Round3.py) checks exact source-to-audit name coverage. Baseline objects are reused; this is not a fresh rebuild of all 118 modules. See [verification-section4-round3-procedure.md](verification-section4-round3-procedure.md), [verification-section4-round3.txt](verification-section4-round3.txt), and [verification.json](verification.json). Historical evidence remains intact. Standard Lake commands still build the entire project from source.
+The current Section 4 round uses incremental verification: hash-check all 118 unchanged baseline sources, freshly rebuild all 6 additions in dependency order, compile the updated root, and run all 811 current axiom queries in three disjoint groups. [scripts/VerifySection4Round4.py](scripts/VerifySection4Round4.py) checks exact source-to-audit name coverage. Baseline objects are reused; this is not a fresh rebuild of all 124 modules. See [verification-section4-round4-procedure.md](verification-section4-round4-procedure.md), [verification-section4-round4.txt](verification-section4-round4.txt), and [verification.json](verification.json). Historical evidence remains intact. Standard Lake commands still build the entire project from source.
 
 The 38-module-stage evidence is retained as `verification-38-module-batch.*`, and earlier evidence as `verification-previous-batch.*`. These files and the earlier semantic reviews preserve historical stages. Section 3 acceptance used a full rebuild of its 69 modules; later documentation clarification and English translation preserved those checked sources and logs. Section 4 adds new modules and separate verification evidence. Compilation does not replace independent semantic review.
