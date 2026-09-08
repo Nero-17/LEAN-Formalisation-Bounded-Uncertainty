@@ -1,0 +1,19 @@
+# Final build provenance
+
+Publication note (2026-09-08): the README and coverage review subsequently clarified that Definition 3.9 gives a formula whose well-definedness is proved under contraction in Proposition 3.10. The extra counterexample concerns an unconditional extension, not a refutation of that definition in context. Only explanatory documentation and its metadata changed; all 69 mathematical source files and the complete compiler/audit logs remain byte-for-byte identical to the checked build below. `verifiedAtUtc` in the manifest retains the original verification time, while `documentationUpdatedAtUtc` records the publication preparation.
+
+The Section 3 source set was frozen at 69 modules, 510 manually named declarations and 7,671 lines. All module source SHA-256 values were checked before the final rebuild and again before packaging.
+
+The final verification run rebuilt every module. `scripts/Check.ps1 -Audit` first compiled 16 modules in entry order. Its last, incomplete module was interrupted to allow parallel execution; that incomplete announcement was removed and the module was rebuilt. A following module's announcement certifies that the preceding invocation returned zero because Check.ps1 throws before announcing the next module on any nonzero exit.
+
+The remaining 53 modules were scheduled by `work/finish-section3-build.py`, a local verification driver. At most three Lean processes ran at a time. A module was eligible only after all its project dependencies had successfully rebuilt. Each compiler wrote a temporary olean, which replaced its final olean only after exit zero and a clean diagnostic check. Frozen source hashes were checked at launch preparation and after each completion. This is a continuation of one full rebuild, not reuse of the previous turn's build as a substitute for recompilation.
+
+After all 69 modules completed, the driver successfully compiled `BoundedUncertainty.lean`. The unfinished serial axiom pass was subsequently interrupted for parallel execution. `work/finish-section3-audit.py` split the 510 independent, stateless `#print axioms` commands in `AxiomAudit.lean` into three disjoint round-robin groups of 170 with the identical import context. Each group was compiled by Lean itself. The audit driver required one printed report for every original request, rejected missing/duplicate reports and `sorryAx`, and allowed only `propext`, `Classical.choice` and `Quot.sound`. The full original audit file was not claimed to have completed as a single serial invocation. The complete output is `verification.txt`. `verification.json` and the ZIP were generated only after the independent coverage review and the completed build.
+
+A serial reproduction of the same Lean source and axiom checks is provided by `scripts/Check.ps1 -Audit`. The special parallel continuation driver is not required to build the project.
+
+Exact copies of the executed driver and its frozen-source input are retained as verification-build-driver.py and verification-source-freeze.json. The driver records absolute paths for this local run; use the standard Check.ps1 command for reproduction in another checkout.
+
+
+The executed parallel audit driver is also retained verbatim as verification-audit-driver.py. Its three generated Lean chunks and output logs remain under .lake/build/audit-chunks in the working checkout. Exact copies are included in the archive as verification-axioms-1-input.lean and verification-axioms-1-output.txt, with corresponding files for groups 2 and 3. The complete merged 510 reports are also in verification.txt.
+

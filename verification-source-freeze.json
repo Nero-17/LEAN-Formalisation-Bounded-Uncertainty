@@ -1,0 +1,347 @@
+[
+  {
+    "module": "AmbientDerivative",
+    "sha256": "0DEEBF8BD8D1A2B23111EADA9A76A65EF776FDFDF3A1D1B1A3D6C0B4E2C67555",
+    "lines": 60
+  },
+  {
+    "module": "Basic",
+    "sha256": "2D58DB835DCDFA89EFEEAE4FF5B00BF526A0DDF380FF348DA2438BA5BCD48F8E",
+    "lines": 128
+  },
+  {
+    "module": "BoundaryContinuity",
+    "sha256": "5C13F257DE763A6BED9F8DD795FF412E15DB7FA4E6D76FC21C6BF787AA290F8A",
+    "lines": 77
+  },
+  {
+    "module": "BoundaryContributors",
+    "sha256": "C12EC80C757801B984CB821770B422DF7E571622D41E224C5A714D8015DE159C",
+    "lines": 123
+  },
+  {
+    "module": "BoundaryDifferential",
+    "sha256": "05C66FF3841DA3645131B66947F0C30D5F84BB89B3D1F73FB6940F1A42E37606",
+    "lines": 143
+  },
+  {
+    "module": "BoundaryHomeomorph",
+    "sha256": "05BBDC7DA83FC154E69E6A035D8ABEA74D8D2FDF5D153979F00E10CD70B2FD40",
+    "lines": 111
+  },
+  {
+    "module": "BoundaryInjectivity",
+    "sha256": "0E228A3EC61D9DC8BE5BB259186CF09FDD4A7A7E3A5619AB781B79F581643538",
+    "lines": 31
+  },
+  {
+    "module": "BoundaryInverseRepresentation",
+    "sha256": "CF3C73BBC4FC3CD8CB8F43340BB59F0953139CC7A82B574EA37848CBB28D39B0",
+    "lines": 122
+  },
+  {
+    "module": "BoundaryMap",
+    "sha256": "0B56602CFEF17FF494A40EC73474C1B558FECF0F9E757302B799E7E8882259BC",
+    "lines": 134
+  },
+  {
+    "module": "BoundaryNormalAlgebra",
+    "sha256": "7A0324312DDE4CF7F445D91D253921E14193CB9C1F0C98E9CCA1E8815798A7C9",
+    "lines": 85
+  },
+  {
+    "module": "BundleDifferential",
+    "sha256": "A440E50A1DDF40E68FC02CC80E3B661A13CB96A8988B756D1243C71CC139C1B8",
+    "lines": 146
+  },
+  {
+    "module": "BundleSphereExtension",
+    "sha256": "8E46024D43ABA688C2BEE94DA049961955B47B4D86E04665CBCD25BFFB3B5818",
+    "lines": 84
+  },
+  {
+    "module": "BundleTangent",
+    "sha256": "D0DAA38A38CFF4059CA36BE3B45DCCFD6982776013FB6F2E7FDD047D27670D27",
+    "lines": 102
+  },
+  {
+    "module": "C1BoundaryGraph",
+    "sha256": "46CE1036305E810A4697B0CAECDA1AFE68385E8A1E0F1953D20C735C915AB42E",
+    "lines": 116
+  },
+  {
+    "module": "C1FrontierContact",
+    "sha256": "EFF41F16942CD7DB7DD6556038A423700615C59A6BCA5A0412184B95CB3617B6",
+    "lines": 123
+  },
+  {
+    "module": "C1FrontierGraph",
+    "sha256": "8CD608B49938A8BD103F5D29028C61BD0F6CF389620E11E5E9F42348617076B6",
+    "lines": 201
+  },
+  {
+    "module": "C1FrontierTopology",
+    "sha256": "52C8C6AB365F2BD5E5BCC6D92F06994251B87A1A7585CC023C2F4B5A98A3436C",
+    "lines": 110
+  },
+  {
+    "module": "CanonicalDerivative",
+    "sha256": "395B47C411B4F0D365D00B6B6959257F089A67133F60B1230F30B83881A60B31",
+    "lines": 67
+  },
+  {
+    "module": "CompactSmoothInverse",
+    "sha256": "6C9FF7C5C113A25D8C405082445C2CA69876D4698E3F9008D0AEE4E5F7776DD6",
+    "lines": 111
+  },
+  {
+    "module": "ConstantRadius",
+    "sha256": "A01B41FB81B275E76CDA9D4DCFF917A9DD45CC080CF450BC168325284AE4EB15",
+    "lines": 54
+  },
+  {
+    "module": "ContactGeometry",
+    "sha256": "055AD2994E5DCDE065399C433467ECCA7B4D7A9FA95406B796D7E6B9001FB1A7",
+    "lines": 135
+  },
+  {
+    "module": "ContractionCharacterization",
+    "sha256": "A952D72DD586D3A61223B5322CA83393AE87E9B9FAFDE1C9B16150E12ECF5B16",
+    "lines": 87
+  },
+  {
+    "module": "ContractionNecessity",
+    "sha256": "613D43E8EDA00EA5D153114011B8917EBD4006B1246B128218BDD3E793539AD5",
+    "lines": 86
+  },
+  {
+    "module": "ContributorFormula",
+    "sha256": "05A0CE3E6FFA9716832E156658A614F49C9E1163D00D0B25EAA2CE2EA7CE3478",
+    "lines": 189
+  },
+  {
+    "module": "DefinitionScope",
+    "sha256": "7BF68AEC123BA879E448245BACA05B5CE30954E7309398E4011C056DD2170F03",
+    "lines": 78
+  },
+  {
+    "module": "DegenerateNormal",
+    "sha256": "70410D332F70983CF6924694659026C004D1BA1A08D902051981FCA9EF027072",
+    "lines": 32
+  },
+  {
+    "module": "DiffeomorphismSetGeometry",
+    "sha256": "4CEA078F014A1FB04350AB3E7DE6CEB603AB04F0223A82050CB2E54FC56F8AFD",
+    "lines": 141
+  },
+  {
+    "module": "ExponentialEmbedding",
+    "sha256": "2EC5C47A167BECFF8B98B1B88487266A49D5D1A4CE4AE662ECC308F77FA2C175",
+    "lines": 140
+  },
+  {
+    "module": "ExponentialInjectivity",
+    "sha256": "D743EAF6FB0C82B427195DF710D0C17291B15139D28C5A1693CA157D13E98655",
+    "lines": 178
+  },
+  {
+    "module": "ExponentialMap",
+    "sha256": "FFACB50C36DF2CBBBBF4E25D6B61B1D28DB83F14D70470BB5AD7D55E30896606",
+    "lines": 92
+  },
+  {
+    "module": "HigherBoundaryInverse",
+    "sha256": "358EB5DAFBBC207A2CE0305D316970E6EB710804775C4E7318192EEABFAD6B51",
+    "lines": 104
+  },
+  {
+    "module": "HigherBoundaryMap",
+    "sha256": "BEC141BF7EF06DDFB1D4C82798EB9E613961076B05AFD70BF4091D460313CB34",
+    "lines": 56
+  },
+  {
+    "module": "HigherDerivative",
+    "sha256": "C98A5F4E5781DA958E0FE35579E52C218CFA30A882037F0F4AB67DD48A7DBF9C",
+    "lines": 128
+  },
+  {
+    "module": "HigherExponential",
+    "sha256": "F49EAFE529836968DD283569A4CE7C7CC81FD29ECF8C331B0E8F2E886165C268",
+    "lines": 142
+  },
+  {
+    "module": "HigherExponentialInverse",
+    "sha256": "587226A855B18FC39057D1496B7B456F127D70B61321D4A578BD0BB59BC8485B",
+    "lines": 152
+  },
+  {
+    "module": "HigherLinearInverse",
+    "sha256": "DBF9E81CFFFA4331A8533C87CBBD6F4BFF563207EB378A10174874B96815D92C",
+    "lines": 112
+  },
+  {
+    "module": "HigherLinearLift",
+    "sha256": "9F20642CDF5BAD35A0F84FB0EFAA806851F20B1D6BF4D0DE7495D59BB211C782",
+    "lines": 114
+  },
+  {
+    "module": "ImplicitRadius",
+    "sha256": "50F71A494AF1DFAEF272141F006FDC2B28FD3D733F1B6C3D5E84D255268CE69F",
+    "lines": 95
+  },
+  {
+    "module": "InflationGeometry",
+    "sha256": "923587844819970B967EE305AED046711AF155EAF821881B18861386800DD67D",
+    "lines": 128
+  },
+  {
+    "module": "InverseTranspose",
+    "sha256": "B85F12799BBDB1C477ED4562FEB0C990D4386017D0478D9429E0309D2431079B",
+    "lines": 60
+  },
+  {
+    "module": "LinearLift",
+    "sha256": "4E67453E4C2407BC096008CA2B461450D1BB2586320BC9A014253533F9732A23",
+    "lines": 73
+  },
+  {
+    "module": "LinearLiftHomeomorph",
+    "sha256": "36FAFA947A7A88ABDB7F92D1B5874D53371146963EE308ADFAE546093667D99B",
+    "lines": 115
+  },
+  {
+    "module": "LocalBoundary",
+    "sha256": "E27F8E4EB80179D4D6E336F7BEF46918437E5E6DAA0C5A3947E29821EBE6A9B3",
+    "lines": 172
+  },
+  {
+    "module": "LocalExtensionOperations",
+    "sha256": "1BFA422FBB7A07D525D0DBA58DB04E510107EC8BE9FA09F7E8FAFA9A522A70FB",
+    "lines": 66
+  },
+  {
+    "module": "MixedRegularity",
+    "sha256": "8E616E10C4EE4C2FBD207B3B88ADE30C3075BB62C7476541D2A57793979BE989",
+    "lines": 155
+  },
+  {
+    "module": "NonsmoothInvariantSet",
+    "sha256": "4BD926D553A76058B5B2C5D191BF0DCE87785BFD32E28BEE920671F92C0F94A0",
+    "lines": 110
+  },
+  {
+    "module": "NormalBundleNotation",
+    "sha256": "6DF56A2C8E0CB63AB09E365EF5E094E96662A4796E766A073E3F17D725675C03",
+    "lines": 65
+  },
+  {
+    "module": "NormalFormula",
+    "sha256": "FA39084DBF0B8A747CA58DDA25EFAEFF1538BA47B3E6D3E99C19291313C8899D",
+    "lines": 164
+  },
+  {
+    "module": "OneDimensionalCounterexample",
+    "sha256": "ABAF92C64C1513564C2D38CECED852EBEA09AB8597B7D8B407E5E029EFD8D69B",
+    "lines": 139
+  },
+  {
+    "module": "OneDimensionalSystem",
+    "sha256": "B330C03B8D2628AEFE6859ED6112607E6CF1574706E18C4653982D75D00AA0E1",
+    "lines": 62
+  },
+  {
+    "module": "RayMonotonicity",
+    "sha256": "5FACA753D26556A4347592243A20A295169EFC19693D25A7345EB8F22CA76D24",
+    "lines": 68
+  },
+  {
+    "module": "Section3Interfaces",
+    "sha256": "BDC5B0BB4E0B949864C7449114205441868EFC524DB1EF14C8D9F16AA5562AFE",
+    "lines": 58
+  },
+  {
+    "module": "SelfSurjectivity",
+    "sha256": "B44835A45544BF68B6E329F2CEEFF55EC2FFEB689E449016DF991000618E239F",
+    "lines": 182
+  },
+  {
+    "module": "SIRSAlgebra",
+    "sha256": "A96703DC69D16B9906AD4ED44248049DBE92AE77859D1C588ED4A652BF1700E9",
+    "lines": 109
+  },
+  {
+    "module": "SIRSDeterministic",
+    "sha256": "AF4E95414DAD5EB64A5564A2C2C6202FA7F10889467D757C5DDE9022DC45CABA",
+    "lines": 177
+  },
+  {
+    "module": "SIRSGeometry",
+    "sha256": "AE6AEBAF0CA2C4D82CD36D72FE3D001CCDB5292BE89B5C82F1336CA970CCA9C9",
+    "lines": 128
+  },
+  {
+    "module": "SIRSGradient",
+    "sha256": "96B212302D152D79AFD6FEA53A651E9B868C94BBF394C416B214D76FEB4527A3",
+    "lines": 98
+  },
+  {
+    "module": "SIRSInvariance",
+    "sha256": "9015E02098C94ACE862D1B307BA4E4016BF5B673B73983B512C77EC9A480AAE7",
+    "lines": 90
+  },
+  {
+    "module": "SIRSSmooth",
+    "sha256": "12AED035DB601B5B8DE1D44BD144CAFA0DAC686B6D3A93C70AFBA5AEA6A19BFE",
+    "lines": 43
+  },
+  {
+    "module": "SIRSSystem",
+    "sha256": "DC94433489662CAA637CA9A3800242EEC18D6C728735CB51790F3B69676C282D",
+    "lines": 118
+  },
+  {
+    "module": "SmoothBoundaryForward",
+    "sha256": "0822BF429709780DA1167E8922DBAB330C29B497010BA0CEEC6E2F75622685F2",
+    "lines": 245
+  },
+  {
+    "module": "SmoothBoundaryInverse",
+    "sha256": "9001E8F53E92134D02873104A0E8FDB95A98604B8E7C765ADB21B718023BE1AB",
+    "lines": 120
+  },
+  {
+    "module": "SmoothExponentialInverse",
+    "sha256": "C8214B1664F1D857614EE7AF6F740A7F9D3781F18D486442E0B7BBD54F8C146D",
+    "lines": 155
+  },
+  {
+    "module": "SmoothImplicitRadius",
+    "sha256": "500A8A50A39222F2FBC7AFCC69EF471FD95FAE56424849242B50938F70E82115",
+    "lines": 85
+  },
+  {
+    "module": "SmoothLocalExtension",
+    "sha256": "858580F7D2709AD9F5BF4193D7455E12FE7E3C0F2A5F89191AC31F9B8FCFFD81",
+    "lines": 161
+  },
+  {
+    "module": "SmoothSphereExtension",
+    "sha256": "01BF03EEE3038CF3A7411B8753360DFC27FDE001CFD744E9233B1B860F62B14E",
+    "lines": 59
+  },
+  {
+    "module": "SphereBoundary",
+    "sha256": "D181D6F30F002F83FDD36492FDE6BB9166CEEAD22783D2E1F81465F8ABCE32E7",
+    "lines": 61
+  },
+  {
+    "module": "VaryingLinearLift",
+    "sha256": "4D06D928AFE8A4C3988BF646A6AA079621477DAA532647A08A71C2DB956DB7EF",
+    "lines": 87
+  },
+  {
+    "module": "ZeroRadius",
+    "sha256": "28AF1BD995E5B4651C99203D571A12D4C4ECF070F73E7FF91B9DC6AB3D89BE01",
+    "lines": 129
+  }
+]

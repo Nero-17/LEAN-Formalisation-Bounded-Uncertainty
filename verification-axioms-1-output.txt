@@ -1,0 +1,298 @@
+'BoundedUncertainty.eqOn_fderiv_of_contDiffOn_eqOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.IsRegularClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.HasLocalExtensionOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.AmbientDiffeomorphismOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.setValuedImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.setValuedIterate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.HasLocalExtensionOn.ambientDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalUpdate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalUpdate_coefficient_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalUpdate_inj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.norm_normalize_unit_add_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.continuous_normalUpdate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.exponentialMap_normal_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.exponentialMap_position_mem_closedBall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.exponentialBundleMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalizedLinearMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalizedLinearMap_symm_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalizedLinearHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.inverseTranspose_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalized_inverseTranspose_symm_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.continuous_radiusGradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.continuousOn_radiusGradientOnAmbient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.derivativeEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.continuous_exponentialLift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exponential_linearLift_position_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.continuous_normalizedLinearMap_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.continuous_normalizedInverseTranspose_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.continuous_linearLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.range_linearLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.mem_inflation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.ball_subset_interior_inflation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.isRegularClosed_inflation_of_isClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.exists_mem_sphere_of_mem_frontier_inflation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.subset_inflation_of_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.frontier_inflation_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.HasLocalExtensionOn.hasLocalExtensionOn_derivative_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.mapDerivativeOnAmbient_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasLocalExtensionOn_radiusGradientOnAmbient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.HasLocalExtensionOn.mono_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.hasLocalExtensionOn_exponentialMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.linearLiftFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.linearLiftOnAmbient_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.ray_mem_closedBall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.radius_eq_of_ray_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exponentialMap_injOn_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.boundaryMap_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.radiusZeroExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.radiusZeroExtension_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exists_centre_on_ray_of_image_eq_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.boundaryMap_surjective_of_image_eq_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.norm_lt_one_of_normalUpdate_injOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.BoundaryFormulaIsBijection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.isContraction_of_boundaryFormulaIsBijection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.boundaryFormulaOnAmbient_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.mapImageHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.linearLiftHomeomorph_coe_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.transposeLiftFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.linearLiftInverseOnAmbient_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.admissibleCentres_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.admissibleCentres_ball_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.isClosedEmbedding_restrictedExponentialLift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.isEmbedding_boundaryMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.continuous_betaHomeomorphRange_symm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.boundaryHomeomorphSelf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.isEmbedding_boundaryFormula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.boundaryInverseOnAmbient_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.boundaryFormulaOnAmbient_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.linearLiftOnAmbient_mapsTo_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.exists_contDiffAt_radiusImplicitSolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasFDerivAt_radiusExtension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasLocalExtensionOn_boundaryInverseOnAmbient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasLocalExtensionOn_boundaryInverseOnAmbient_of_image_eq_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.norm_normalized_tangent_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.mem_bundleTangentSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.bundleDifferential_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.finrank_bundleTangentSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.bundleTangentEquivOfLocalInverse_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exists_nonsingular_boundaryExtension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.inner_eq_zero_of_halfspace_nonpos_of_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.exists_nonneg_smul_of_halfspace_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalizeBundleOutput_eq_of_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.contDiffOn_normalizeBundleOutput' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.eventually_pos_right_of_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1BoundaryAt.ofDefiningFunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1BoundaryAt.eventually_mem_ray_of_inner_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.C1BoundaryAt.inner_gradient_nonpos_of_isLocalMaxOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.C1BoundaryAt.normal_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1BoundaryGraphAt.defining' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1BoundaryGraphAt.mem_definingNeighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.C1BoundaryGraphAt.mem_iff_defining_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.C1BoundaryGraphAt.hasGradientAt_defining' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1BoundaryGraphAt.toC1BoundaryAt_normal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.one_sided_of_frontier_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.graphCoordinatesHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1FrontierGraphAt.mem_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1FrontierGraphAt.toC1BoundaryAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1BoundaryAt.closedBall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1BoundaryAt.normal_eq_radial_of_ball_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.contactGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exists_nonneg_contact_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.normalUpdate_eq_of_nonneg_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exists_nonpos_radiusGradient_smul_at_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exponentialLift_of_inflation_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.C1FrontierGraphAt.outwardNormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.C1FrontierGraphAt.outwardNormal_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.mem_frontier_constituent_iff_dist' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.contact_position_eq_explicit_multiplier_of_frontierGraph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SmoothLocalExtensionAt.toLocalExtensionAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.HasSmoothLocalExtensionOn.mono_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.HasSmoothLocalExtensionOn.comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.hasSmoothLocalExtensionOn_invFunOn_of_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.hasGradientAt_zero_of_isLocalMin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalUpdate_gradient_of_isLocalMin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.radiusGradient_eq_zero_of_mem_interior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exponentialMap_of_zero_radius_of_domain_eq_univ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.radiusGradient_eq_zero_of_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.hasLocalExtensionOn_of_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.IsUniqueContributingPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.contDiff_oscillatingRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.unconditionedExponentialSystem_gradient_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.normalUpdate_ne_self_of_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.AmbientDiffeomorphismOn.image_interior_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.AmbientDiffeomorphismOn.isCompact_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.hasSmoothLocalExtensionOn_of_eventually_contDiffAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.hasSmoothLocalExtensionOn_exponentialMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasSmoothLocalExtensionOn_mapDerivativeOnAmbient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasSmoothLocalExtensionOn_boundaryFormulaOnAmbient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasSmoothLocalExtensionOn_radiusGradientOnAmbient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.HasSmoothLocalExtensionOn.exists_sphere_valued_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exists_smooth_sphere_boundaryInverseExtension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasSmoothLocalExtensionOn_boundaryInverseOnAmbient_of_image_eq_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.hasLocalExtensionOn_boundaryInverseOnAmbient_of_smooth_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.boundaryFormula_regular_homeomorphism_of_smooth_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.SetValuedSystem.exists_nonsingular_boundaryExtension_of_smooth_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.sirsRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.contDiff_sirsRadiusGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsMap_second_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsRadius_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.convex_sirsSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.mem_interior_sirsSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsRadius_eq_zero_iff_mem_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.not_nonempty_C1FrontierGraphAt_sirsSimplex_vertex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.identityZeroRadiusBoundaryHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.exists_nonsmooth_compact_regular_closed_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.outwardNormalBundle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.inwardNormalBundle_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.outwardNormalBundle_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.contDiff_intervalRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.intervalRadius_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.normalUpdate_real_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.surjOn_intervalRadius_plus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.bijOn_exponentialMap_intervalRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.isRegularClosed_unitInterval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.intervalBoundaryFormula_eq_exponentialMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.sirsJacobian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.hasFDerivAt_sirsMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.det_sirsJacobian_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsDerivative_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsMap_nonsingular_on_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsAmbientDiffeomorphism_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.gradient_sirsRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsGradientBound_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsRadiusGradient_norm_isGreatest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirs_numeric_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsRadius_lipschitz_estimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsRadius_lt_infDist_frontier_of_mem_interior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.sirsSystem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsSystem_gradient_supremum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedUncertainty.sirsSystemThree_boundary_zero_nonzero_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BoundedUncertainty.sirsSystem_radius_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]

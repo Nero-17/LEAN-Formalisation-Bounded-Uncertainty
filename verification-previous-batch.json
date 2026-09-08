@@ -1,0 +1,177 @@
+{
+  "verifiedAtUtc": "2026-09-08T11:19:49.1977729Z",
+  "paperCommit": "3200c88826c73210d1e83bfc46de1656ee0788ef",
+  "leanVersion": "4.28.0",
+  "leanCommit": "7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
+  "mathlibCommit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "moduleCount": 20,
+  "sourceLineCount": 2069.0,
+  "auditedDeclarationCount": 153,
+  "buildExitCode": 0,
+  "warningsFound": false,
+  "proofPlaceholdersFound": false,
+  "permittedAxioms": [
+    "Classical.choice",
+    "propext",
+    "Quot.sound"
+  ],
+  "completedPaperResults": [
+    "Proposition 3.10",
+    "Proposition 3.15",
+    "Theorem 3.17"
+  ],
+  "partialPaperResults": [
+    "Theorem 3.14: complete topological homeomorphism onto the actual image, with full-bundle homeomorphism when f(X)=X; higher regularity remains unformalized"
+  ],
+  "theorem314TopologicalComplete": true,
+  "theorem314HigherRegularityComplete": false,
+  "theorem314Complete": false,
+  "theorem317Complete": true,
+  "section3Complete": false,
+  "regularityOrderInterface": "Finite positive natural-number orders; no separate infinite-order interface",
+  "remainingSection3Results": [
+    "Lemmas 3.4-3.7",
+    "Theorem 3.8",
+    "Theorem 3.14 higher regularity"
+  ],
+  "sources": [
+    {
+      "module": "AmbientDerivative",
+      "sha256": "0DEEBF8BD8D1A2B23111EADA9A76A65EF776FDFDF3A1D1B1A3D6C0B4E2C67555",
+      "lines": 60
+    },
+    {
+      "module": "Basic",
+      "sha256": "2D58DB835DCDFA89EFEEAE4FF5B00BF526A0DDF380FF348DA2438BA5BCD48F8E",
+      "lines": 128
+    },
+    {
+      "module": "BoundaryContinuity",
+      "sha256": "5C13F257DE763A6BED9F8DD795FF412E15DB7FA4E6D76FC21C6BF787AA290F8A",
+      "lines": 77
+    },
+    {
+      "module": "BoundaryHomeomorph",
+      "sha256": "05BBDC7DA83FC154E69E6A035D8ABEA74D8D2FDF5D153979F00E10CD70B2FD40",
+      "lines": 111
+    },
+    {
+      "module": "BoundaryInjectivity",
+      "sha256": "0E228A3EC61D9DC8BE5BB259186CF09FDD4A7A7E3A5619AB781B79F581643538",
+      "lines": 31
+    },
+    {
+      "module": "BoundaryMap",
+      "sha256": "0B56602CFEF17FF494A40EC73474C1B558FECF0F9E757302B799E7E8882259BC",
+      "lines": 134
+    },
+    {
+      "module": "CanonicalDerivative",
+      "sha256": "395B47C411B4F0D365D00B6B6959257F089A67133F60B1230F30B83881A60B31",
+      "lines": 67
+    },
+    {
+      "module": "ContractionCharacterization",
+      "sha256": "A952D72DD586D3A61223B5322CA83393AE87E9B9FAFDE1C9B16150E12ECF5B16",
+      "lines": 87
+    },
+    {
+      "module": "ContractionNecessity",
+      "sha256": "613D43E8EDA00EA5D153114011B8917EBD4006B1246B128218BDD3E793539AD5",
+      "lines": 86
+    },
+    {
+      "module": "ExponentialEmbedding",
+      "sha256": "2EC5C47A167BECFF8B98B1B88487266A49D5D1A4CE4AE662ECC308F77FA2C175",
+      "lines": 140
+    },
+    {
+      "module": "ExponentialInjectivity",
+      "sha256": "D743EAF6FB0C82B427195DF710D0C17291B15139D28C5A1693CA157D13E98655",
+      "lines": 178
+    },
+    {
+      "module": "ExponentialMap",
+      "sha256": "FFACB50C36DF2CBBBBF4E25D6B61B1D28DB83F14D70470BB5AD7D55E30896606",
+      "lines": 92
+    },
+    {
+      "module": "InverseTranspose",
+      "sha256": "B85F12799BBDB1C477ED4562FEB0C990D4386017D0478D9429E0309D2431079B",
+      "lines": 60
+    },
+    {
+      "module": "LinearLift",
+      "sha256": "4E67453E4C2407BC096008CA2B461450D1BB2586320BC9A014253533F9732A23",
+      "lines": 73
+    },
+    {
+      "module": "LinearLiftHomeomorph",
+      "sha256": "36FAFA947A7A88ABDB7F92D1B5874D53371146963EE308ADFAE546093667D99B",
+      "lines": 115
+    },
+    {
+      "module": "NormalFormula",
+      "sha256": "FA39084DBF0B8A747CA58DDA25EFAEFF1538BA47B3E6D3E99C19291313C8899D",
+      "lines": 164
+    },
+    {
+      "module": "RayMonotonicity",
+      "sha256": "5FACA753D26556A4347592243A20A295169EFC19693D25A7345EB8F22CA76D24",
+      "lines": 68
+    },
+    {
+      "module": "SelfSurjectivity",
+      "sha256": "B44835A45544BF68B6E329F2CEEFF55EC2FFEB689E449016DF991000618E239F",
+      "lines": 182
+    },
+    {
+      "module": "VaryingLinearLift",
+      "sha256": "4D06D928AFE8A4C3988BF646A6AA079621477DAA532647A08A71C2DB956DB7EF",
+      "lines": 87
+    },
+    {
+      "module": "ZeroRadius",
+      "sha256": "28AF1BD995E5B4651C99203D571A12D4C4ECF070F73E7FF91B9DC6AB3D89BE01",
+      "lines": 129
+    }
+  ],
+  "supportingFiles": [
+    {
+      "path": "BoundedUncertainty.lean",
+      "sha256": "F38187F7227CAE8F517A8646913AB39C11167E90610AD2C9380E3D66B7F41EC2"
+    },
+    {
+      "path": "AxiomAudit.lean",
+      "sha256": "CA3B8132D0B7141126F0C40F86B32B8B8A2B2D0687066EE46F922DFAF53262C7"
+    },
+    {
+      "path": "scripts/Check.ps1",
+      "sha256": "A2571C473203E749A9B1C81F6FD741CF62E7399763C22FEED4D47FB2A7DF9C35"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "924C9C345D1D2F4BEC28CBA1B41E8A6A09B5541D147D44DC92E2DA82C35193E3"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "DB7BB24B756D745BBDE83FE92718B51BD3625DAE3701BA0F598D0EEDCD3F3028"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8D6446379FB3389C36A9D9A8A12AD0CCFBCF1369FD0C997C286551A4890A6F28"
+    },
+    {
+      "path": "semantic-review.md",
+      "sha256": "F6EBB4576837FB82C77A9DD918009CB69E7911915785456CF01F817130739127"
+    },
+    {
+      "path": "semantic-review-first-batch.md",
+      "sha256": "87E79CE78A956BFE41C980824CAA802E632EF12E3818976235912B509A64B32F"
+    },
+    {
+      "path": "verification.txt",
+      "sha256": "6F8C1275B7DFAC95E3B9DB7A46C7016C23387D0EB56464D23B478C5064929B9B"
+    }
+  ]
+}
