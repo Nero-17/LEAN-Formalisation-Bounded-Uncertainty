@@ -1,52 +1,53 @@
-**Section 3：边界几何与高阶正则性的交叉语义复核**
+**Historical review:** This document records the review at the 38-module stage. Current coverage is documented in [section3-coverage-review.md](section3-coverage-review.md).
 
-日期：2026-09-08。论文基线：3200c88826c73210d1e83bfc46de1656ee0788ef。
+**Section 3: Independent Semantic Review of Boundary Geometry and Higher Regularity**
 
-本报告记录源码的数学含义与假设；编译和公理验收另见 verification.txt/json。旧轮次见 semantic-review-topology.md 与 semantic-review-first-batch.md。
+Date: 2026-09-08. Manuscript baseline: 3200c88826c73210d1e83bfc46de1656ee0788ef.
 
-| 独立审查者 | 本轮审查的他人源码 | 判定 |
+This report records the mathematical meaning and assumptions of the source code. Compilation and axiom verification are documented separately in verification.txt/json. Earlier rounds are recorded in semantic-review-topology.md and semantic-review-first-batch.md.
+
+| Independent reviewer | Other agents' source code reviewed in this round | Verdict |
 |---|---|---|
-| lean_normal_algebra | BoundaryContributors、LocalBoundary、ContactGeometry | ACCEPT，附局部边界模型桥接范围说明 |
-| lean_lift | ContributorFormula、BoundaryInverseRepresentation、HigherBoundaryInverse | ACCEPT，附有限阶与切空间接口范围说明 |
-| 主代理 | InflationGeometry、BoundaryNormalAlgebra、SphereBoundary、C1BoundaryGraph、ContributorFormula，以及全部 8 个高阶／隐函数／局部扩张操作代理模块 | ACCEPT |
+| lean_normal_algebra | BoundaryContributors, LocalBoundary, ContactGeometry | ACCEPT, with a scope qualification concerning the bridge to local boundary models |
+| lean_lift | ContributorFormula, BoundaryInverseRepresentation, HigherBoundaryInverse | ACCEPT, with scope qualifications concerning finite orders and tangent-space interfaces |
+| Lead agent | InflationGeometry, BoundaryNormalAlgebra, SphereBoundary, C1BoundaryGraph, ContributorFormula, and all 8 agent-authored modules concerning higher regularity, implicit functions, and local-extension operations | ACCEPT |
 
-主代理编写 BoundaryContributors、LocalBoundary、ContactGeometry、BoundaryInverseRepresentation、HigherBoundaryInverse，独立复核由另一代理承担。各代理都没有把本人编写模块的自查算作独立审查。
+The lead agent authored BoundaryContributors, LocalBoundary, ContactGeometry, BoundaryInverseRepresentation, and HigherBoundaryInverse; another agent performed their independent review. No agent counted a review of their own modules as an independent review.
 
-**贡献中心与膨胀**
+**Contributing Centers and Inflation**
 
-InflationGeometry 用 B 与闭单位球的积经 (y,u)↦y+radius(y)u 的连续像证明紧性。只需半径在 B 上相对连续，零半径参数化仍有效。正半径球由内点闭包覆盖，零半径中心则使用 B 的正则闭性和 B 包含于膨胀。
+InflationGeometry proves compactness by expressing the inflation as the continuous image of the product of B and the closed unit ball under (y,u)↦y+radius(y)u. Only relative continuity of the radius on B is required, and the parameterization remains valid at zero radius. Positive-radius balls are covered by the closure of their interior points; zero-radius centers are handled using the regular closedness of B and the inclusion of B in its inflation.
 
-BoundaryContributors 的逐点引理不要求中心集紧或边界光滑。正半径内点贡献者使 q−radius(z−qu) 在零点有局部最小值，而真实局部延拓的导数为 1+inner(gradient,u)>0，矛盾。零半径先由 z=y 排除内点。最终包含关系通过紧性证明贡献者存在，不把存在性隐藏在前提里。
+The pointwise lemmas in BoundaryContributors do not require compactness of the center set or smoothness of its boundary. An interior contributor with positive radius makes q−radius(z−qu) attain a local minimum at its root, whereas the derivative of the actual local extension is 1+inner(gradient,u)>0, a contradiction. At zero radius, z=y first rules out an interior contributor. The final inclusion uses compactness to prove that a contributor exists, rather than hiding existence in a hypothesis.
 
-**C1 边界、有符号乘子和实际公式**
+**C1 Boundaries, Signed Multipliers, and the Actual Formula**
 
-C1BoundaryAt 只给集合的局部非正定义函数及归一化实际梯度。LocalBoundary 由一侧射线导数符号证明进入或离开集合，再得正切锥成员和局部极大值的导数不等式。BoundaryNormalAlgebra 将半空间不等式严格转成非负法向倍数。共法向、frontier 成员、法向唯一性都是结论，不是结构字段。
+C1BoundaryAt supplies only a local nonpositive defining function for the set and its normalized actual gradient. LocalBoundary uses the sign of a one-sided ray derivative to prove entry into or exit from the set, then derives tangent-cone membership and the derivative inequality at a local maximum. BoundaryNormalAlgebra rigorously converts the half-space inequality into a nonnegative multiple of the normal. Alignment of the normals, frontier membership, and uniqueness of the normal are conclusions, not structure fields.
 
-SphereBoundary 计算平方距离的实际梯度，在正半径球面上证明其非零，再得径向外法向。ContactGeometry 用球包含性与共法向识别接收法向；用负平方接触势在 B 上的局部最大值证明乘子符号。接触梯度来自真实局部半径扩张并与规范梯度一致，−2 与除以 2 的缩放正确。
+SphereBoundary computes the actual gradient of squared distance, proves it is nonzero on a positive-radius sphere, and obtains the radial outward normal. ContactGeometry uses ball containment and alignment of the normals to identify the receiving normal; it proves the multiplier's sign using the local maximum on B of the negative squared contact potential. The contact gradient comes from an actual local radius extension and agrees with the canonical gradient. The scaling by −2 and division by 2 are correct.
 
-C1BoundaryGraph 允许任意可逆线性坐标的一侧 C1 图表，不预设图函数在零点导数为零。横向导数为 1，故梯度非零，进而构造边界数据。**尚未从单独的 regular closed 与 C1 hypersurface frontier 假设构造一侧图表。** 3.5–3.8 当前验收的是明确的定义函数／一侧图表版本，编译成功不能消除该范围限制。
+C1BoundaryGraph allows a one-sided C1 graph chart in arbitrary invertible linear coordinates, without assuming that the graph function has zero derivative at the origin. The transverse derivative is 1, so the gradient is nonzero, yielding boundary data. **A one-sided graph chart has not yet been constructed solely from the assumptions of regular closedness and a C1 hypersurface frontier.** The accepted scope for 3.5–3.8 at this stage is the explicit defining-function / one-sided graph-chart version; successful compilation does not remove this scope limitation.
 
-ContributorFormula 的正半径分支从真实内切球与乘子关系得到 u+gradient 是源外法向的非负倍数。Contraction 排除该向量为零，因此倍数严格正，归一化后用已证 normalUpdate 逆公式。
+For positive radius, ContributorFormula uses the actual internally tangent ball and the multiplier relation to show that u+gradient is a nonnegative multiple of the source outward normal. Contraction rules out a zero vector, so the multiple is strictly positive; normalization then allows the established inverse formula for normalUpdate to be applied.
 
-零半径时 z=y，集合包含性使两端外法向一致。半径在 B 上非负且于 y 取零，负半径的实际扩张在 B 上取局部最大值，故 gradient=(-coefficient)•normal，coefficient≥0。平行梯度的 normalUpdate 恒等式完成法向公式，没有假设边界梯度为零。实际 raw E、typed exponentialLift 和显式 lambda、位置表达式均与原稿 3.8 连接。
+At zero radius, z=y, and set containment makes the two outward normals agree. The radius is nonnegative on B and vanishes at y, so an actual extension of its negative attains a local maximum on B. Hence gradient=(-coefficient)•normal, with coefficient≥0. The normalUpdate identity for a parallel gradient completes the normal formula without assuming that the boundary gradient vanishes. The actual raw E, typed exponentialLift, explicit lambda, and position expression are all connected to manuscript 3.8.
 
-**高阶正则性与隐函数逆**
+**Higher Regularity and the Implicit-Function Inverse**
 
-HigherDerivative 逐点微分原 C^r/C^s 局部扩张，通过正则闭域上的规范导数唯一性识别域内导数场，得到 C^(r−1) 梯度与 C^(s−1) 微分。没有要求域外零填充代表本身光滑或 UniqueDiffOn X。
+HigherDerivative differentiates the original C^r/C^s local extensions pointwise. Uniqueness of the canonical derivative on a regular closed domain identifies the derivative fields on the domain, giving a C^(r−1) gradient and a C^(s−1) differential. It does not require the ambient representative extended by zero outside the domain to be smooth, or assume UniqueDiffOn X.
 
-HigherExponential 将平方范数视为内积求导，覆盖零梯度；点态 contraction 保证根号内严格正。HigherLinearLift 在真实可逆微分处使用算子逆的光滑性，单位法向保证归一化分母非零。HigherLinearInverse 在实际 f(X) 上恢复源点，再在同一个源点计算真实微分的转置。
+HigherExponential differentiates the squared norm as an inner product, covering a zero gradient; pointwise contraction makes the radicand strictly positive. HigherLinearLift uses smoothness of operator inversion at the actual invertible differential, and the unit normal ensures that the normalization denominator is nonzero. HigherLinearInverse recovers the source point on the actual f(X), then computes the transpose of the actual differential at that same source point.
 
-LocalExtensionOperations 的复合先缩小邻域，使内扩张落入外扩张邻域；相等只在合法交集使用。自然数减一在 r,s≥1 时正确覆盖 C0。
+Composition in LocalExtensionOperations first shrinks the neighborhood so that the inner extension lands in the outer extension's neighborhood; equalities are used only on valid intersections. Subtracting one in the natural numbers correctly includes C0 when r,s≥1.
 
-ImplicitRadius 对 q−radius(z−qu)=0 使用 mathlib 的高阶 IFT，偏导来自真实 HasFDerivAt，非零性来自 1+inner(gradient,u)>0。结论含基点值、局部方程和联合邻域中的唯一性。
+ImplicitRadius applies mathlib's higher-order IFT to q−radius(z−qu)=0. The partial derivative comes from an actual HasFDerivAt, and its nonvanishing follows from 1+inner(gradient,u)>0. The conclusion includes the value at the base point, the local equation, and uniqueness in a joint neighborhood.
 
-HigherExponentialInverse 仅以已经建立的连续右逆为输入。相对连续性使恢复中心及半径进入扩张与唯一性邻域，真实根因而等于隐函数分支。中心恢复和归一化逆法向给出 C^(r−1) 延拓。未预设高阶逆光滑性，也未要求半径为正或像闭。
+HigherExponentialInverse takes only an already established continuous right inverse as input. Relative continuity places the recovered center and radius in the extension and uniqueness neighborhoods, so the actual root equals the implicit-function branch. Recovery of the center and normalization of the inverse normal give a C^(r−1) extension. Higher regularity of the inverse is not assumed, and neither positive radius nor a closed image is required.
 
-**beta 的实际像与正逆正则性**
+**The Actual Image of beta and Regularity in Both Directions**
 
-BoundaryInverseRepresentation 的范围是 typed 候选公式的真实 ambient 输出 Set.range boundaryFormula。逆代表在此范围取真实同胚逆的坐标，域外零值不承担正则性结论。正反复合等式与原 beta 一致。
+The range used in BoundaryInverseRepresentation is Set.range boundaryFormula, the actual ambient output of the typed candidate formula. On this range, the inverse representative takes the coordinates of the actual homeomorphism inverse; its zero values outside the range carry no regularity claim. The composition identities in both directions agree with the original beta.
 
-HigherBoundaryInverse 中，L∘betaInverse 的连续性来自真实 beta 逆的连续性与 L 连续；E 的右逆等式就是已经证明的 beta 复合等式。IFT 给中间逆 C^(r−1)，mapsTo_image 保证中心落在 f(X)，然后才复合 L 的 C^(s−1) 逆。最终仅在真实 range 使用 L逆∘L=id，阶数 min(r,s)−1 正确。全像分支只在显式 f(X)=X 后使用满射性。没有循环假设。
+In HigherBoundaryInverse, continuity of L∘betaInverse follows from continuity of the actual beta inverse and continuity of L. The right-inverse identity for E is precisely the already proved composition identity for beta. The IFT gives the intermediate inverse regularity C^(r−1), and mapsTo_image ensures that the center belongs to f(X); only then is it composed with the C^(s−1) inverse of L. The final use of L inverse∘L=id is restricted to the actual range, and the order min(r,s)−1 is correct. The full-image branch uses surjectivity only after the explicit assumption f(X)=X. There is no circular assumption.
 
-当前完成范围为有限自然数阶下的同胚及双向局部坐标延拓，r=1 或 s=1 时退化为 C0。**未构造流形切空间上的 D beta 线性等价、非奇异 bundle-diffeomorphism 结构或单独 C∞ 接口。** Theorem 3.14 的有限阶陈述及双向正则性已得到；这些额外接口不能同时算作完成。
-
+The completed scope at this stage is a homeomorphism with local coordinate extensions in both directions at finite natural-number orders, reducing to C0 when r=1 or s=1. **A linear equivalence D beta on manifold tangent spaces, a nonsingular bundle-diffeomorphism structure, and a separate C∞ interface have not been constructed.** The finite-order statement of Theorem 3.14 and regularity in both directions have been obtained; these additional interfaces must not also be counted as complete.

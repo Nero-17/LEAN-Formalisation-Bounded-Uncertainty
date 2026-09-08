@@ -428,11 +428,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "BCBBEE7179FCE45526913DD1AE546E59C61CA1E227FF14FDB6F0902F438073E4"
+      "sha256": "A039C3228CCD181B80037A434A579D76894ED6C4BD6944F88AECCF0459C96B2E"
     },
     {
       "path": "semantic-review.md",
-      "sha256": "69FF83BA58C1032C13609B3EAA0CEA60CA6E905AA9BD5DA7508E2F4274564B7C"
+      "sha256": "B3D3F2D80E2FC0C0E20C9E36BDD9E20CF99FC618F9439674EEDC5460225345D9"
     },
     {
       "path": "semantic-review-first-batch.md",
@@ -440,7 +440,7 @@
     },
     {
       "path": "semantic-review-topology.md",
-      "sha256": "F6EBB4576837FB82C77A9DD918009CB69E7911915785456CF01F817130739127"
+      "sha256": "23F5B2FD589486B352A1C9CC11C4C6674FFC052A78D6D09057601E293DE8D66E"
     },
     {
       "path": "section3-coverage-review.md",
@@ -452,7 +452,7 @@
     },
     {
       "path": "verification-build-procedure.md",
-      "sha256": "3547CAF6F92CC40C5933216C8D2A2EF3577DC8A978647128A2DE151B2972AADB"
+      "sha256": "9CEB703E53E5A8D731C4039AD8E350C65CF48DDAD89D0D4284389F3534F56BBE"
     },
     {
       "path": "verification-build-driver.py",
@@ -515,10 +515,12 @@
       "sha256": "A1AF29DE7B2F1FDB89AB62AE3F3CFD3D2A648EB991E85B5FDEE261FAD26618C3"
     }
   ],
-  "documentationUpdatedAtUtc": "2026-09-08T14:26:14.802282+00:00",
+  "documentationUpdatedAtUtc": "2026-09-08T14:54:34.065547+00:00",
   "publicationRepository": "https://github.com/Nero-17/LEAN-Formalisation-Bounded-Uncertainty",
   "publicationVisibility": "public",
-  "publicationVerification": "All 69 mathematical sources, root and audit inputs, and all compiler/axiom evidence retain their original hashes. This publication updates explanatory documentation and metadata only; the original verifiedAtUtc is preserved.",
+  "publicationVerification": "All 69 mathematical sources, root and audit inputs, and compiler/axiom evidence retain their original hashes. This update translates documentation into English and refreshes documentation metadata only; the original verifiedAtUtc is preserved.",
   "definition39Interpretation": "The paper explicitly gives the formula before proving well-definedness in Proposition 3.10. No substantive error in that definition is established. Earlier review language calling the original definition refuted has been withdrawn.",
-  "section3StatementsUnderStatedConditionsFormalized": true
+  "section3StatementsUnderStatedConditionsFormalized": true,
+  "documentationLanguage": "English",
+  "documentationTranslation": "README.md, semantic-review.md and semantic-review-topology.md were translated into English. Historical review scope and reviewer attribution were preserved. All 97 tracked files were checked for Chinese/CJK text, including decoded JSON strings."
 }
