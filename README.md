@@ -1,6 +1,6 @@
 # LEAN Formalisation of Bounded Uncertainty
 
-Lean 4 formalisation of Section 3 and selected results of Section 4 of *Dynamics with state-dependent uncertainty: a boundary map approach*. The current project contains 112 mathematical modules and 744 named declarations. Lean 4.28.0 and an exact mathlib revision are pinned below. Section 3 is complete within the stated deductive scope; Section 4 is in progress.
+Lean 4 formalisation of Section 3 and selected results of Section 4 of *Dynamics with state-dependent uncertainty: a boundary map approach*. The current project contains 118 mathematical modules and 783 named declarations. Lean 4.28.0 and an exact mathlib revision are pinned below. Section 3 is complete within the stated deductive scope; Section 4 is in progress.
 
 The project covers the deductive content of Section 3 in the fixed paper snapshot: definitions and interfaces, all lemmas, propositions and theorems, analytical examples, and counterexamples discussed in the remarks. Definition 3.9 introduces a formula, and Proposition 3.10 then proves its well-definedness under contraction; the formalisation represents these together. The additional `DefinitionScope` example shows that an unconditional extension of the construction can fail. It does not refute the definition or proposition in their stated context. Numerical figures are not treated as proved dynamical conclusions.
 
@@ -25,7 +25,7 @@ The paper snapshot is commit `3200c88826c73210d1e83bfc46de1656ee0788ef`; Section
 
 ## Section 4 progress
 
-The second Section 4 batch adds 25 modules and 107 declarations, preserving all 87 previously verified mathematical source files. The first batch added 18 modules and 127 declarations. The current claim ledger and independent review are in [section4-round2-review.md](section4-round2-review.md); [section4-coverage-review.md](section4-coverage-review.md) preserves the first-batch assessment.
+The third Section 4 batch adds 6 modules and 39 declarations, preserving all 112 previously verified mathematical source files. The current claim ledger and independent review are in [section4-round3-review.md](section4-round3-review.md). The earlier [round-two review](section4-round2-review.md) and [first-batch review](section4-coverage-review.md) preserve their historical assessments.
 
 | Paper content | Formalised result | Main modules |
 |---|---|---|
@@ -41,8 +41,15 @@ The second Section 4 batch adds 25 modules and 107 declarations, preserving all 
 | Theorem 4.17 | Actual inverse-beta image equality; genuine preimage defining data, regular closedness and fixed-model frontier charts are constructed | WholeSpaceNormalTransport, DualInverseBoundary, DualBoundaryInterfaces |
 | Corollary 4.18 | Actual invariant inward bundle, restriction homeomorphism, finite/smooth sphere-valued local extensions and ambient state-bundle nonsingular differential | DualInvariantBoundary |
 
+| Annulus visibility example | Actual compact regular closed C1 annulus with identity map and radius one; exact inflation is the radius-three ball; all inner-boundary balls lie in its interior, so source visibility fails | AnnulusVisibility |
+| Point-start iteration | Every positive singleton-iterate frontier is contained in the projection of the corresponding actual beta iterate of the initial full unit fibre | PointStartIteration |
+| Unique-nearest-point distance differential | Actual distance and squared-distance gradients; uniqueness only at the marked point; compact scope and closed/proper extension, without convexity | NearestPointContinuity, DistanceDifferentiability, ClosedDistanceDifferentiability |
+| Inverse exponential display after 4.16 | Proved unit-bundle bijection, genuine inverse, and inverse inward-normal-bundle equality with dual regular closedness derived | DualExponentialInverse |
 
-**Still open:** standalone Lemma 4.8 for an arbitrary topological hypersurface; the annulus visibility example; the later point-start iteration composition wrapper; a mathlib manifold-with-boundary structure for dual balls beyond the proved one-sided C1 graphs; the separate unique-nearest-point distance derivative and inverse-exponential display following 4.16. Numerical trajectories are not certified. Section 4 is not claimed complete.
+
+**Still open:** standalone Lemma 4.8 for an arbitrary topological hypersurface, and a mathlib manifold-with-boundary structure for dual balls beyond the proved one-sided C1 graphs. Numerical trajectories are not certified. Section 4 is not claimed complete.
+
+The separately stated distance derivative is now proved: compactness and uniqueness at the base point force every nearby minimizer to approach that point; a two-sided squared-distance remainder estimate yields the derivative, and a square-root argument yields the distance gradient. A proved local compact truncation extends this to closed sets in proper spaces. The alternative normal-contact proof of 4.16 is retained. The point-start result asserts inclusion for later iterates, not equality without further visibility assumptions.
 
 Theorem 4.9 now has a complete proof under the original graph and visibility hypotheses, with zero radius permitted. The local projection is proved open using regular closedness, connected caps and unique vertical crossings, and the resulting graph is proved C1. This actual-frontier route does not prove standalone Lemma 4.8 for arbitrary topological manifolds. At zero radius a quantitative small/large-radius estimate replaces the manuscript's subsequence split. For 4.16, tangent dual-ball and exterior-ball normal comparisons replace distance differentiation and show that nearest-point attainment suffices. These are alternative verified proofs; the Overleaf manuscript was not edited.
 
@@ -91,6 +98,6 @@ That script recompiles every module in entry-point dependency order, compiles th
 
 The preserved Section 3 full rebuild consisted of 16 modules completed serially and 53 compiled in parallel once their dependencies were ready, followed by 510 axiom queries in three groups. [verification-build-procedure.md](verification-build-procedure.md), [verification.txt](verification.txt), and [verification-section3.json](verification-section3.json) preserve that baseline evidence.
 
-The current Section 4 round uses incremental verification: hash-check all 87 unchanged baseline sources, freshly rebuild all 25 added modules in dependency order, compile the updated root, and run all 744 current axiom queries in three disjoint groups. [scripts/VerifySection4Round2.py](scripts/VerifySection4Round2.py) also checks exact source-to-audit name coverage. Baseline objects are reused; this is not a fresh rebuild of all 112 modules. See [verification-section4-round2-procedure.md](verification-section4-round2-procedure.md), [verification-section4-round2.txt](verification-section4-round2.txt), and [verification.json](verification.json). Historical round-one and Section 3 evidence remain intact. The standard Lake commands still build the entire project from source.
+The current Section 4 round uses incremental verification: hash-check all 112 unchanged baseline sources, freshly rebuild all 6 additions in dependency order, compile the updated root, and run all 783 current axiom queries in three disjoint groups. [scripts/VerifySection4Round3.py](scripts/VerifySection4Round3.py) checks exact source-to-audit name coverage. Baseline objects are reused; this is not a fresh rebuild of all 118 modules. See [verification-section4-round3-procedure.md](verification-section4-round3-procedure.md), [verification-section4-round3.txt](verification-section4-round3.txt), and [verification.json](verification.json). Historical evidence remains intact. Standard Lake commands still build the entire project from source.
 
 The 38-module-stage evidence is retained as `verification-38-module-batch.*`, and earlier evidence as `verification-previous-batch.*`. These files and the earlier semantic reviews preserve historical stages. Section 3 acceptance used a full rebuild of its 69 modules; later documentation clarification and English translation preserved those checked sources and logs. Section 4 adds new modules and separate verification evidence. Compilation does not replace independent semantic review.

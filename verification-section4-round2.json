@@ -1,5 +1,5 @@
 {
-  "verifiedAtUtc": "2026-09-08T17:30:57Z",
+  "verifiedAtUtc": "2026-09-08T17:01:08Z",
   "paperCommit": "3200c88826c73210d1e83bfc46de1656ee0788ef",
   "paperSourceSha256": "8F8D61DE1EB4E9672FF64B978FDC449316C666E0B92A0B72FC29FA16EE8A3911",
   "paperSection3Lines": [
@@ -9,12 +9,12 @@
   "leanVersion": "4.28.0",
   "leanCommit": "7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
   "mathlibCommit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
-  "moduleCount": 118,
-  "sourceLineCount": 13842,
-  "auditedDeclarationCount": 783,
+  "moduleCount": 112,
+  "sourceLineCount": 13122,
+  "auditedDeclarationCount": 744,
   "buildExitCode": 0,
-  "buildScope": "Section 4 round three: all 112 baseline source hashes checked; all 6 added modules freshly rebuilt; updated entry point compiled; all 783 current handwritten declarations audited.",
-  "buildExecution": "Dependency-ready rebuild with at most three Lean processes; the verified 112-module baseline objects were reused. All current builtin axiom queries compiled in three disjoint groups. Not a fresh rebuild of all 118 modules.",
+  "buildScope": "Section 4 round two: all 87 baseline mathematical source hashes checked; all 25 added modules freshly rebuilt; updated entry point compiled; all 744 current handwritten declarations audited.",
+  "buildExecution": "Dependency-ready rebuild with at most three Lean processes; the verified 87-module baseline objects were reused. All current builtin axiom queries compiled in three disjoint groups. Not a fresh rebuild of all 112 modules.",
   "warningsFound": false,
   "proofPlaceholdersFound": false,
   "permittedAxioms": [
@@ -53,11 +53,7 @@
     "Compactness and regular closedness of the dual inflation of a compact set, including the empty set",
     "Theorem 4.16 actual inward-normal-bundle exponential image equality under weaker two-sided nearest-point attainment",
     "Theorem 4.17 actual inverse-beta normal-bundle equality with preimage regularity and fixed-model chart existence derived",
-    "Corollary 4.18 actual dual-invariant inward-bundle identities, restriction homeomorphism, finite and smooth sphere-valued extensions and ambient-bundle nonsingular differential",
-    "Actual annulus example: compact regular closed C1 source, identity map with radius one, exact inflation and failure of source visibility",
-    "Point-start boundary inclusion for every positive iterate from actual first-step fibre initialization and Theorem 4.10",
-    "Unique-nearest-point actual squared-distance and distance gradients for compact sets, and for closed sets in proper inner-product spaces",
-    "Genuine whole-space exponential unit-bundle bijection and inverse; displayed inverse inward-normal-bundle identity following Theorem 4.16 with derived dual regular closedness"
+    "Corollary 4.18 actual dual-invariant inward-bundle identities, restriction homeomorphism, finite and smooth sphere-valued extensions and ambient-bundle nonsingular differential"
   ],
   "partialPaperResults": [],
   "theorem314TopologicalComplete": true,
@@ -79,8 +75,7 @@
   "independentReview": [
     "section3-coverage-review.md",
     "section4-coverage-review.md",
-    "section4-round2-review.md",
-    "section4-round3-review.md"
+    "section4-round2-review.md"
   ],
   "sources": [
     {
@@ -642,36 +637,6 @@
       "module": "RecipientRegularity",
       "sha256": "2311F171F6ECB9BCE21AE55F6E564254A1EB7BDCE21CDD74B8BFE9B829D9C48B",
       "lines": 103
-    },
-    {
-      "module": "AnnulusVisibility",
-      "sha256": "243A69042B3939DFE932B8BCED20F82866B395C31D77E52FEFDB0F8C2AE30887",
-      "lines": 245
-    },
-    {
-      "module": "DualExponentialInverse",
-      "sha256": "66FE3A63C91BD51C7F92252FF854096899A26FB25CC59DA68C990C3428888155",
-      "lines": 127
-    },
-    {
-      "module": "NearestPointContinuity",
-      "sha256": "37EB8D6126F8EFE4675AE0D92E3658745B740D7FF31C050C89F55C98F486AC27",
-      "lines": 91
-    },
-    {
-      "module": "PointStartIteration",
-      "sha256": "DEA8B67FA133E704A9891D5531509D0BE13A35101737FDAFBD1613A649C669BD",
-      "lines": 64
-    },
-    {
-      "module": "DistanceDifferentiability",
-      "sha256": "12E0E5135573D9EA473AEEF19242BE0BA2937803EEC1BEF6D523965DDF8AED92",
-      "lines": 111
-    },
-    {
-      "module": "ClosedDistanceDifferentiability",
-      "sha256": "82BBF59B389FF9E1E4C537D059CD4E5615611B7C5CDE6F87A5DA96970A6F4A3B",
-      "lines": 82
     }
   ],
   "supportingFiles": [
@@ -685,15 +650,15 @@
     },
     {
       "path": "AxiomAudit.lean",
-      "sha256": "4DD0ED4E230CC19BC9250CF087222273791D3225B9234A61A18D6C550B31F43B"
+      "sha256": "64891EF922AD91940D0A7C48A2A2B552AB6705401A11FE5FE317D3D57A9AC807"
     },
     {
       "path": "BoundedUncertainty.lean",
-      "sha256": "210D166EB56431FC63730DAD571FDF6728629FB0EB15A6DED81522C4CFC31326"
+      "sha256": "A2DBB5D45A0B65857EE72E35F043265BABBAC3D9BEA97F46B2EF36B8136962CB"
     },
     {
       "path": "README.md",
-      "sha256": "CF0E63A3C2EF208B5B3677D801FDB9F836F803B9BDB7E820809F04935C04DB0B"
+      "sha256": "9D296EB832C939990244F759C2460487A21A1A00245933E0A7C4EF78F4965C60"
     },
     {
       "path": "lakefile.toml",
@@ -716,10 +681,6 @@
       "sha256": "53EF7C119066A3F003C117C0E7635D0C9CB63153FD707018AA947D2C4A2638C9"
     },
     {
-      "path": "scripts/VerifySection4Round3.py",
-      "sha256": "5470EF8FA4478E76FBB41ABBCB2D75E238FBC79663E6185DD1BA31B42382C0F0"
-    },
-    {
       "path": "section3-coverage-review.md",
       "sha256": "1AAD8838B26FBE96077DF5474DDDC1AC73C7216BA07B104D99F4452EB6B6B375"
     },
@@ -730,10 +691,6 @@
     {
       "path": "section4-round2-review.md",
       "sha256": "B4C003D2015628377E72D2043764B07A0BF0975F00D55ABBE63A2835DBA9F5AA"
-    },
-    {
-      "path": "section4-round3-review.md",
-      "sha256": "C7685D08C6C9B80E35AD7FE6E912F2C6562C0C7D5681BB9C810CE133DF0D4A0F"
     },
     {
       "path": "semantic-review-first-batch.md",
@@ -868,48 +825,8 @@
       "sha256": "9710CB682F9F7353E248103A88C7D7026C2B4497FAFC91C6974CD1B0C4252B3A"
     },
     {
-      "path": "verification-section4-round2.json",
-      "sha256": "19A4FD3A6A7F283EFB66997E8322A4CE9211EE0F6F8F2A63A7C6B49E5E21AA83"
-    },
-    {
       "path": "verification-section4-round2.txt",
       "sha256": "01D18026742488C46E90B195E807A4D4F4D5FA8BD47B1D15430076F7CE018D41"
-    },
-    {
-      "path": "verification-section4-round3-axioms-1-input.lean",
-      "sha256": "50A2BE8467B0A1CA537FAD0998624CD620EC1289C983FF47F1B8DF78D78D7B0B"
-    },
-    {
-      "path": "verification-section4-round3-axioms-1-output.txt",
-      "sha256": "4FD90EFBF2240D545993D88218DE20184DFE7B691CEB708C898FF163D52461FD"
-    },
-    {
-      "path": "verification-section4-round3-axioms-2-input.lean",
-      "sha256": "5D8FFECEBD7FE801FC6D1C56284006CBD197A60A02B8F68786A9C31D1E21F571"
-    },
-    {
-      "path": "verification-section4-round3-axioms-2-output.txt",
-      "sha256": "B4AE646E7E2234B311B39374C6A7CBF43424FF1059E59D25C55E7C8B60372D59"
-    },
-    {
-      "path": "verification-section4-round3-axioms-3-input.lean",
-      "sha256": "88DF5AD3BEC54BDFC5F93D3E34911E247338609B8098A2250E2933AA18EEB35A"
-    },
-    {
-      "path": "verification-section4-round3-axioms-3-output.txt",
-      "sha256": "D3D55C2F4F34DC3434B0510B8F7C498E5423238F0F677878F974F67880968687"
-    },
-    {
-      "path": "verification-section4-round3-procedure.md",
-      "sha256": "5B6AB37CB2BFDFFB337AA5C4D6C3010A8BD0298F149F9DBC1E1C6D06F084303B"
-    },
-    {
-      "path": "verification-section4-round3-source-freeze.json",
-      "sha256": "5A650DC6A14D8A51C904058D05D0D8FD71A9BEEEA2ED1B8B69945E41B038D1B1"
-    },
-    {
-      "path": "verification-section4-round3.txt",
-      "sha256": "D92F8D14AC636E950DB08341173B57B7A52638E1E80BF3660741979481669B2C"
     },
     {
       "path": "verification-section4-source-freeze.json",
@@ -928,24 +845,43 @@
       "sha256": "1B06F6D2F93AEA4AA3E688B2DFAEBCC4C50C24D90CC788E496ABA92C53232908"
     }
   ],
-  "documentationUpdatedAtUtc": "2026-09-08T17:30:57Z",
+  "documentationUpdatedAtUtc": "2026-09-08T17:01:08Z",
   "publicationRepository": "https://github.com/Nero-17/LEAN-Formalisation-Bounded-Uncertainty",
   "publicationVisibility": "public",
-  "publicationVerification": "Round three preserves the verified 112-module baseline and historical evidence, freshly checks 6 additions and the root, and audits all 783 names.",
+  "publicationVerification": "Round two preserves the verified 87-module baseline and its historical evidence, freshly checks 25 additions and the root, and audits all 744 current named declarations.",
   "definition39Interpretation": "The paper explicitly gives the formula before proving well-definedness in Proposition 3.10. No substantive error in that definition is established. Earlier review language calling the original definition refuted has been withdrawn.",
   "section3StatementsUnderStatedConditionsFormalized": true,
   "documentationLanguage": "English",
   "addedModules": [
-    "AnnulusVisibility",
-    "DualExponentialInverse",
-    "NearestPointContinuity",
-    "PointStartIteration",
-    "DistanceDifferentiability",
-    "ClosedDistanceDifferentiability"
+    "DualBallGeometry",
+    "FrontierGraphReparametrization",
+    "FrontierProjection",
+    "NormalCoordinates",
+    "RecipientParametrization",
+    "SecantEstimates",
+    "WholeSpaceNormalTransport",
+    "ZeroRadiusSecants",
+    "DualInflationGeometry",
+    "GraphSecantRegularity",
+    "ZeroRadiusChordAlgebra",
+    "DualBoundaryContact",
+    "SecantCone",
+    "ZeroRadiusSecantLimit",
+    "DualBoundaryCorrespondence",
+    "DualInvariantBoundary",
+    "LocalNormalGraph",
+    "RecipientSecants",
+    "SequentialSecants",
+    "DualInverseBoundary",
+    "FrontierNormalCriterion",
+    "SequentialFrontierCriterion",
+    "BoundaryDefiningGraph",
+    "DualBoundaryInterfaces",
+    "RecipientRegularity"
   ],
-  "unchangedBaselineModuleCount": 112,
+  "unchangedBaselineModuleCount": 87,
   "axiomAuditExitCode": 0,
-  "axiomAuditScope": "All 783 handwritten names extracted from current Lean sources and matched exactly to AxiomAudit.lean, then checked by Lean in three disjoint groups.",
+  "axiomAuditScope": "All 744 handwritten names extracted from current Lean sources and matched exactly to AxiomAudit.lean, then checked by Lean in three disjoint groups.",
   "section3Baseline": {
     "manifest": "verification-section3.json",
     "compilerLog": "verification.txt",
@@ -961,25 +897,21 @@
   "section4Complete": false,
   "remainingSection4DeductiveGaps": [
     "Lemma 4.8 standalone secant-to-C1 criterion for an arbitrary topological hypersurface",
-    "A mathlib manifold-with-boundary structure on each dual ball, beyond the proved local one-sided C1 graphs"
+    "Explicit annulus counterexample showing source visibility is not automatic",
+    "Explicit later point-start iteration composition wrapper from 4.10 and 4.11",
+    "A mathlib manifold-with-boundary structure on each dual ball, beyond the proved local one-sided C1 graphs",
+    "The separately stated unique-nearest-point distance differential, bypassed in the alternative proof of 4.16",
+    "The separately displayed inverse-exponential formulation following the 4.16 image equality"
   ],
   "section4ScopeIssue": "The weak-distance description of union-defined dual inflation fails for arbitrary nonclosed sets when the infimum is not attained. The union/preimage identities and nonempty compact/closed corrections are proved; the compact-set dual theory is not refuted.",
-  "section4ProofStrategy": "Theorem 4.10 uses the proved local-maximizer transport induction followed by nearest-point quadratic maxima and compactness of the projected transported initial normal bundle. No manuscript edit was made. Theorem 4.9 now uses an actual regular-closed-frontier projection proof and a quantitative zero-radius small/large-radius estimate. The dual normal correspondences use tangent-set normal comparison, without differentiating the distance function. No manuscript proof has been edited. Round three separately proves distance differentiability using compact-gap nearest-point convergence and a squared-distance sandwich, with a closed/proper localization extension. The inverse exponential display uses the genuine unit-bundle inverse. No manuscript proof has been edited.",
-  "incrementalVerificationDriverSha256": "5470EF8FA4478E76FBB41ABBCB2D75E238FBC79663E6185DD1BA31B42382C0F0",
+  "section4ProofStrategy": "Theorem 4.10 uses the proved local-maximizer transport induction followed by nearest-point quadratic maxima and compactness of the projected transported initial normal bundle. No manuscript edit was made. Theorem 4.9 now uses an actual regular-closed-frontier projection proof and a quantitative zero-radius small/large-radius estimate. The dual normal correspondences use tangent-set normal comparison, without differentiating the distance function. No manuscript proof has been edited.",
+  "incrementalVerificationDriverSha256": "53EF7C119066A3F003C117C0E7635D0C9CB63153FD707018AA947D2C4A2638C9",
   "section4Round1Baseline": {
     "manifest": "verification-section4-round1.json",
     "compilerLog": "verification-section4.txt",
     "verifiedAtUtc": "2026-09-08T15:49:30Z",
     "moduleCount": 87,
     "declarationCount": 637,
-    "allMathematicalSourceHashesUnchanged": true
-  },
-  "section4Round2Baseline": {
-    "manifest": "verification-section4-round2.json",
-    "compilerLog": "verification-section4-round2.txt",
-    "verifiedAtUtc": "2026-09-08T17:01:08Z",
-    "moduleCount": 112,
-    "declarationCount": 744,
     "allMathematicalSourceHashesUnchanged": true
   }
 }
