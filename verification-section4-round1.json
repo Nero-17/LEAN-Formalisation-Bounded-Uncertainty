@@ -1,5 +1,5 @@
 {
-  "verifiedAtUtc": "2026-09-08T17:01:08Z",
+  "verifiedAtUtc": "2026-09-08T15:49:30Z",
   "paperCommit": "3200c88826c73210d1e83bfc46de1656ee0788ef",
   "paperSourceSha256": "8F8D61DE1EB4E9672FF64B978FDC449316C666E0B92A0B72FC29FA16EE8A3911",
   "paperSection3Lines": [
@@ -9,12 +9,12 @@
   "leanVersion": "4.28.0",
   "leanCommit": "7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
   "mathlibCommit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
-  "moduleCount": 112,
-  "sourceLineCount": 13122,
-  "auditedDeclarationCount": 744,
+  "moduleCount": 87,
+  "sourceLineCount": 10045,
+  "auditedDeclarationCount": 637,
   "buildExitCode": 0,
-  "buildScope": "Section 4 round two: all 87 baseline mathematical source hashes checked; all 25 added modules freshly rebuilt; updated entry point compiled; all 744 current handwritten declarations audited.",
-  "buildExecution": "Dependency-ready rebuild with at most three Lean processes; the verified 87-module baseline objects were reused. All current builtin axiom queries compiled in three disjoint groups. Not a fresh rebuild of all 112 modules.",
+  "buildScope": "Incremental Section 4 extension: all 69 baseline mathematical source hashes checked; every one of 18 added modules freshly rebuilt; updated entry point compiled; all 637 current handwritten declarations audited.",
+  "buildExecution": "Dependency-ready rebuild with at most three Lean processes; baseline verified compiled objects reused; all current builtin axiom queries compiled in three disjoint groups with identical import context. Not a fresh rebuild of all 87 modules.",
   "warningsFound": false,
   "proofPlaceholdersFound": false,
   "permittedAxioms": [
@@ -46,16 +46,11 @@
     "Proposition 4.11 fixed-source fibre equals actual ball outward normal bundle",
     "Example 4.12 exact first-step singleton initialization and projection",
     "Definition 4.13 union-defined dual objects and Lemmas 4.14-4.15 valid preimage factorisations",
-    "Definition 4.13 / Lemma 4.15 distance equality for nonempty compact or closed sets; actual two-dimensional counterexample to the arbitrary-set equality",
-    "Theorem 4.9 complete original-graph regularity equivalence, including actual two-moving-point secants at positive and zero radius",
-    "Actual regular-closed-frontier normal-secant criterion and derived common-model C1 charts; distinct from standalone Lemma 4.8",
-    "Actual dual-ball compactness, star-convexity, C1 defining data, frontier graphs, one-sided boundary graphs, and regular closedness",
-    "Compactness and regular closedness of the dual inflation of a compact set, including the empty set",
-    "Theorem 4.16 actual inward-normal-bundle exponential image equality under weaker two-sided nearest-point attainment",
-    "Theorem 4.17 actual inverse-beta normal-bundle equality with preimage regularity and fixed-model chart existence derived",
-    "Corollary 4.18 actual dual-invariant inward-bundle identities, restriction homeomorphism, finite and smooth sphere-valued extensions and ambient-bundle nonsingular differential"
+    "Definition 4.13 / Lemma 4.15 distance equality for nonempty compact or closed sets; actual two-dimensional counterexample to the arbitrary-set equality"
   ],
-  "partialPaperResults": [],
+  "partialPaperResults": [
+    "Theorem 4.9: forward implication, source-normal continuity, raw Gamma range and homeomorphism reduction, and contributor uniqueness from Gamma injectivity"
+  ],
   "theorem314TopologicalComplete": true,
   "theorem314FiniteOrderStatementComplete": true,
   "theorem314ForwardAndInverseLocalExtensionsComplete": true,
@@ -74,8 +69,7 @@
   "remainingSection3DeductiveGaps": [],
   "independentReview": [
     "section3-coverage-review.md",
-    "section4-coverage-review.md",
-    "section4-round2-review.md"
+    "section4-coverage-review.md"
   ],
   "sources": [
     {
@@ -512,131 +506,6 @@
       "module": "IteratedBoundaryInclusion",
       "sha256": "C9E49F058B132F4D37B3E5227A70D2FF58DD0E8305C230DE39A4539CE2B04834",
       "lines": 151
-    },
-    {
-      "module": "DualBallGeometry",
-      "sha256": "60E8A37D9D96731FFEEC9C555D08DFAB9FE25950DC5B4C7A1575ABEEEDC5D2E9",
-      "lines": 212
-    },
-    {
-      "module": "FrontierGraphReparametrization",
-      "sha256": "94E0EEDD2B3B913E2B7CE7665E2048923E4C1376E17CACDAB7E3BEB3B4E901E0",
-      "lines": 50
-    },
-    {
-      "module": "FrontierProjection",
-      "sha256": "20D7B1E8B7F26EF9663D56F8EA73D17EDF99369A534DED82AA8F648EFF593F83",
-      "lines": 223
-    },
-    {
-      "module": "NormalCoordinates",
-      "sha256": "5E25BA43D9EC16E9E658F92236C128F3492A95BA08B569C089DE7A42D54814FA",
-      "lines": 58
-    },
-    {
-      "module": "RecipientParametrization",
-      "sha256": "7A18C919D6EC181CF7EEF2CB79C1C51C9949CB8DF339872A5C1A15399BE4F078",
-      "lines": 124
-    },
-    {
-      "module": "SecantEstimates",
-      "sha256": "2F7A93B0AAB065539CD86ADD187BEFB752A7712A2CC312454C5DE2779EAA9285",
-      "lines": 196
-    },
-    {
-      "module": "WholeSpaceNormalTransport",
-      "sha256": "E077E2A2B265286E7D9B9D8F8EE34C3D96702118F32D4074E941CB7F9B3A539A",
-      "lines": 177
-    },
-    {
-      "module": "ZeroRadiusSecants",
-      "sha256": "52AB093DCD5AD560E4DD1AA5E2C00C60A38647379974B8D42354EB79C3BB6D68",
-      "lines": 116
-    },
-    {
-      "module": "DualInflationGeometry",
-      "sha256": "B233AAB4C41D5E84C354C2699370645163D9B8E05D73E4EC2A5578E697F2DF99",
-      "lines": 62
-    },
-    {
-      "module": "GraphSecantRegularity",
-      "sha256": "03BA1B3E565A0F8E935E54315B302F639DB4173A602FFBE272E2488309A8777E",
-      "lines": 116
-    },
-    {
-      "module": "ZeroRadiusChordAlgebra",
-      "sha256": "6B444F927F4C612EF9F401436CA96131BBB4042489AB75BF4AE22661BA835BB2",
-      "lines": 140
-    },
-    {
-      "module": "DualBoundaryContact",
-      "sha256": "D3D585B016A15542828ACA4212E8831471E75F653BCA0F6032B5D5ED6820C690",
-      "lines": 165
-    },
-    {
-      "module": "SecantCone",
-      "sha256": "AF6453EBAEBC04009971A49676F2DC0D584CEEB08BED21911355FB5B57BC9511",
-      "lines": 48
-    },
-    {
-      "module": "ZeroRadiusSecantLimit",
-      "sha256": "6987660AA39A179F4FA6387D0DEEBCC3615EF408EE5E5190A7461A46727F4D0B",
-      "lines": 180
-    },
-    {
-      "module": "DualBoundaryCorrespondence",
-      "sha256": "B749ABAFFEB6C4146A196BAD49F0EABECCDF55354FDB86E18AC64B9CDAF7CA5A",
-      "lines": 96
-    },
-    {
-      "module": "DualInvariantBoundary",
-      "sha256": "A5E845BB2D7872A72277DEFAD1F2C09778F7BDD960B5AB1400CF74DDA0B50618",
-      "lines": 236
-    },
-    {
-      "module": "LocalNormalGraph",
-      "sha256": "D09A90493FD946C4ADA31E46B707D9878C1E695DDC912E4907116A5450650498",
-      "lines": 70
-    },
-    {
-      "module": "RecipientSecants",
-      "sha256": "529169A84A2987203EEF2856060E72326488B3DA5CA8B30A9DAA3C02BBD3C02B",
-      "lines": 134
-    },
-    {
-      "module": "SequentialSecants",
-      "sha256": "A34E341741C81C3080CEC65F95701369A6852E817CD4FBFD0DC0340F3F050A1B",
-      "lines": 62
-    },
-    {
-      "module": "DualInverseBoundary",
-      "sha256": "A07325430B7053D08C740767345C6ADF85F340931385F1DE25C81B512B979B50",
-      "lines": 77
-    },
-    {
-      "module": "FrontierNormalCriterion",
-      "sha256": "DB6D0916934D0C94BC43D1BAE3D83C647D88F7CC707D253025517CADDA5CF2E7",
-      "lines": 147
-    },
-    {
-      "module": "SequentialFrontierCriterion",
-      "sha256": "F504AAFB3256D1E7162EAE0ED460B4AEF2E8D0DD9AFEAE5E315AE7D1F77C0ECF",
-      "lines": 59
-    },
-    {
-      "module": "BoundaryDefiningGraph",
-      "sha256": "13C37582A81C30C04BC45F0E6966F77128221DF8C378C1A1E03FEF9C456DFB52",
-      "lines": 44
-    },
-    {
-      "module": "DualBoundaryInterfaces",
-      "sha256": "FA8308C80A2B0ECD239CE07455685A4453BCFEBF0C130D128B73B56912185514",
-      "lines": 182
-    },
-    {
-      "module": "RecipientRegularity",
-      "sha256": "2311F171F6ECB9BCE21AE55F6E564254A1EB7BDCE21CDD74B8BFE9B829D9C48B",
-      "lines": 103
     }
   ],
   "supportingFiles": [
@@ -650,15 +519,15 @@
     },
     {
       "path": "AxiomAudit.lean",
-      "sha256": "64891EF922AD91940D0A7C48A2A2B552AB6705401A11FE5FE317D3D57A9AC807"
+      "sha256": "0E5D928488C0C7978781AC2CB1983F9117570F5B9A3263848682612764D73BD2"
     },
     {
       "path": "BoundedUncertainty.lean",
-      "sha256": "A2DBB5D45A0B65857EE72E35F043265BABBAC3D9BEA97F46B2EF36B8136962CB"
+      "sha256": "239FC6A4691E2096341701440E4C6D196CF8BBAC702B4EFF8A7F36E33F511896"
     },
     {
       "path": "README.md",
-      "sha256": "9D296EB832C939990244F759C2460487A21A1A00245933E0A7C4EF78F4965C60"
+      "sha256": "789C9579630CA8FFE84875A5B0CB0E0B91F88C93E5113AD8BC47808A31CE3A08"
     },
     {
       "path": "lakefile.toml",
@@ -677,20 +546,12 @@
       "sha256": "03B9DF4BA80C4335128B8E1F61796D2ED1471E2327FA63B478CF0D580722D537"
     },
     {
-      "path": "scripts/VerifySection4Round2.py",
-      "sha256": "53EF7C119066A3F003C117C0E7635D0C9CB63153FD707018AA947D2C4A2638C9"
-    },
-    {
       "path": "section3-coverage-review.md",
       "sha256": "1AAD8838B26FBE96077DF5474DDDC1AC73C7216BA07B104D99F4452EB6B6B375"
     },
     {
       "path": "section4-coverage-review.md",
       "sha256": "A665A8F7CB16A49C76B5F96264C357ED797A3EEC920C730A84D5832E7C7BA516"
-    },
-    {
-      "path": "section4-round2-review.md",
-      "sha256": "B4C003D2015628377E72D2043764B07A0BF0975F00D55ABBE63A2835DBA9F5AA"
     },
     {
       "path": "semantic-review-first-batch.md",
@@ -789,46 +650,6 @@
       "sha256": "1A28CB1C35D267E28CEFE65666C1C15ECC7F7ADC6C0E983F9BED05FFDC92BCE5"
     },
     {
-      "path": "verification-section4-round1.json",
-      "sha256": "E67184A7C29C691ECD63A12F04B9E1B965495E8103362FF4260C3379339CE55E"
-    },
-    {
-      "path": "verification-section4-round2-axioms-1-input.lean",
-      "sha256": "ED09411F0F6604D8B3D229D476105583536D54350D8239F52966CC33B96A728B"
-    },
-    {
-      "path": "verification-section4-round2-axioms-1-output.txt",
-      "sha256": "ABAE4F08A733A215675D40C2B64E9C504A88A892904BB08565BB67C0D07621F0"
-    },
-    {
-      "path": "verification-section4-round2-axioms-2-input.lean",
-      "sha256": "894D2FC002480D6CCF04887C7985BD4D0314EA7A7BBE525A6B098D14FEBCCD16"
-    },
-    {
-      "path": "verification-section4-round2-axioms-2-output.txt",
-      "sha256": "D8D8D40B2884797242859767681A28C8084DFA3595F3BCAAF278C043E698CB3D"
-    },
-    {
-      "path": "verification-section4-round2-axioms-3-input.lean",
-      "sha256": "EF9E898B10EB86CFD544FB2D28ADB54BAA278CA02EB02F11287D9042D7B4D9E2"
-    },
-    {
-      "path": "verification-section4-round2-axioms-3-output.txt",
-      "sha256": "6EEF95F01B05F45D5357216C1F03626998F84F561A3CCF6288B973359F036442"
-    },
-    {
-      "path": "verification-section4-round2-procedure.md",
-      "sha256": "76889C2B62BF80BF90440FFAF7A16ACA6490C8F3F44B861179BA8946CF2EE105"
-    },
-    {
-      "path": "verification-section4-round2-source-freeze.json",
-      "sha256": "9710CB682F9F7353E248103A88C7D7026C2B4497FAFC91C6974CD1B0C4252B3A"
-    },
-    {
-      "path": "verification-section4-round2.txt",
-      "sha256": "01D18026742488C46E90B195E807A4D4F4D5FA8BD47B1D15430076F7CE018D41"
-    },
-    {
       "path": "verification-section4-source-freeze.json",
       "sha256": "FA4B57CCDDED6A2BA3ACC94CCD1D42236E97A11B560685225ED30DEF7FEC80DE"
     },
@@ -845,43 +666,36 @@
       "sha256": "1B06F6D2F93AEA4AA3E688B2DFAEBCC4C50C24D90CC788E496ABA92C53232908"
     }
   ],
-  "documentationUpdatedAtUtc": "2026-09-08T17:01:08Z",
+  "documentationUpdatedAtUtc": "2026-09-08T15:49:30Z",
   "publicationRepository": "https://github.com/Nero-17/LEAN-Formalisation-Bounded-Uncertainty",
   "publicationVisibility": "public",
-  "publicationVerification": "Round two preserves the verified 87-module baseline and its historical evidence, freshly checks 25 additions and the root, and audits all 744 current named declarations.",
+  "publicationVerification": "Current Section 4 verification hashes all original mathematical sources and every added source, freshly checks the additions and root, and audits all current named declarations. Historical Section 3 evidence is preserved separately.",
   "definition39Interpretation": "The paper explicitly gives the formula before proving well-definedness in Proposition 3.10. No substantive error in that definition is established. Earlier review language calling the original definition refuted has been withdrawn.",
   "section3StatementsUnderStatedConditionsFormalized": true,
   "documentationLanguage": "English",
   "addedModules": [
-    "DualBallGeometry",
-    "FrontierGraphReparametrization",
-    "FrontierProjection",
-    "NormalCoordinates",
-    "RecipientParametrization",
-    "SecantEstimates",
-    "WholeSpaceNormalTransport",
-    "ZeroRadiusSecants",
-    "DualInflationGeometry",
-    "GraphSecantRegularity",
-    "ZeroRadiusChordAlgebra",
-    "DualBoundaryContact",
-    "SecantCone",
-    "ZeroRadiusSecantLimit",
-    "DualBoundaryCorrespondence",
-    "DualInvariantBoundary",
-    "LocalNormalGraph",
-    "RecipientSecants",
-    "SequentialSecants",
-    "DualInverseBoundary",
-    "FrontierNormalCriterion",
-    "SequentialFrontierCriterion",
-    "BoundaryDefiningGraph",
-    "DualBoundaryInterfaces",
-    "RecipientRegularity"
+    "BoundaryFibre",
+    "ContributorUniqueness",
+    "DiffeomorphismBoundaryNormal",
+    "DualInflation",
+    "MaximizerGeometry",
+    "RecipientUniqueness",
+    "SourceVisibility",
+    "DualInflationScope",
+    "ForwardBoundaryCorrespondence",
+    "MaximizerTransport",
+    "ForwardNormalBundle",
+    "BoundaryNormalContinuity",
+    "InvariantBoundaryRegularity",
+    "SetValuedIterates",
+    "BoundaryProjectionTopology",
+    "InvariantBoundaryExtensions",
+    "MaximizerIteration",
+    "IteratedBoundaryInclusion"
   ],
-  "unchangedBaselineModuleCount": 87,
+  "unchangedBaselineModuleCount": 69,
   "axiomAuditExitCode": 0,
-  "axiomAuditScope": "All 744 handwritten names extracted from current Lean sources and matched exactly to AxiomAudit.lean, then checked by Lean in three disjoint groups.",
+  "axiomAuditScope": "All 637 handwritten names independently extracted from current Lean sources and matched exactly to AxiomAudit.lean, then checked by Lean in groups of 213, 212 and 212.",
   "section3Baseline": {
     "manifest": "verification-section3.json",
     "compilerLog": "verification.txt",
@@ -896,22 +710,14 @@
   ],
   "section4Complete": false,
   "remainingSection4DeductiveGaps": [
-    "Lemma 4.8 standalone secant-to-C1 criterion for an arbitrary topological hypersurface",
+    "Lemma 4.8 standalone secant-to-C1 criterion",
+    "Theorem 4.9 converse regularity and secant estimates, including vanishing-radius regime",
     "Explicit annulus counterexample showing source visibility is not automatic",
     "Explicit later point-start iteration composition wrapper from 4.10 and 4.11",
-    "A mathlib manifold-with-boundary structure on each dual ball, beyond the proved local one-sided C1 graphs",
-    "The separately stated unique-nearest-point distance differential, bypassed in the alternative proof of 4.16",
-    "The separately displayed inverse-exponential formulation following the 4.16 image equality"
+    "Unnumbered dual-ball compactness, star-shapedness, C1 boundary and manifold-with-boundary claims",
+    "Unique-nearest-point distance differential and Theorems 4.16-4.17 / Corollary 4.18"
   ],
   "section4ScopeIssue": "The weak-distance description of union-defined dual inflation fails for arbitrary nonclosed sets when the infimum is not attained. The union/preimage identities and nonempty compact/closed corrections are proved; the compact-set dual theory is not refuted.",
-  "section4ProofStrategy": "Theorem 4.10 uses the proved local-maximizer transport induction followed by nearest-point quadratic maxima and compactness of the projected transported initial normal bundle. No manuscript edit was made. Theorem 4.9 now uses an actual regular-closed-frontier projection proof and a quantitative zero-radius small/large-radius estimate. The dual normal correspondences use tangent-set normal comparison, without differentiating the distance function. No manuscript proof has been edited.",
-  "incrementalVerificationDriverSha256": "53EF7C119066A3F003C117C0E7635D0C9CB63153FD707018AA947D2C4A2638C9",
-  "section4Round1Baseline": {
-    "manifest": "verification-section4-round1.json",
-    "compilerLog": "verification-section4.txt",
-    "verifiedAtUtc": "2026-09-08T15:49:30Z",
-    "moduleCount": 87,
-    "declarationCount": 637,
-    "allMathematicalSourceHashesUnchanged": true
-  }
+  "section4ProofStrategy": "Theorem 4.10 uses the proved local-maximizer transport induction followed by nearest-point quadratic maxima and compactness of the projected transported initial normal bundle. No manuscript edit was made.",
+  "incrementalVerificationDriverSha256": "03B9DF4BA80C4335128B8E1F61796D2ED1471E2327FA63B478CF0D580722D537"
 }
